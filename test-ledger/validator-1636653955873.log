@@ -1,0 +1,1050 @@
+[0m[38;5;8m[[0m2021-11-11T18:05:55.874857400Z [0m[32mINFO [0m solana_test_validator[0m[38;5;8m][0m solana-validator 1.8.3 (src:de94c4e8; feat:52865992)
+[0m[38;5;8m[[0m2021-11-11T18:05:55.874899500Z [0m[32mINFO [0m solana_test_validator[0m[38;5;8m][0m Starting validator with: ArgsOs {
+        inner: [
+            "solana-test-validator",
+        ],
+    }
+[0m[38;5;8m[[0m2021-11-11T18:05:55.874987500Z [0m[33mWARN [0m solana_perf[0m[38;5;8m][0m CUDA is disabled
+[0m[38;5;8m[[0m2021-11-11T18:05:55.875029300Z [0m[32mINFO [0m solana_perf[0m[38;5;8m][0m AVX detected
+[0m[38;5;8m[[0m2021-11-11T18:05:55.875034900Z [0m[32mINFO [0m solana_perf[0m[38;5;8m][0m AVX2 detected
+[0m[38;5;8m[[0m2021-11-11T18:05:55.880781200Z [0m[32mINFO [0m solana_faucet::faucet[0m[38;5;8m][0m Faucet started. Listening on: 0.0.0.0:9900
+[0m[38;5;8m[[0m2021-11-11T18:05:55.880816600Z [0m[32mINFO [0m solana_faucet::faucet[0m[38;5;8m][0m Faucet account address: F9pN32cZZZEC6kQCR8xSL4wNm9J9zyqA2Zx3XB77Rtkw
+[0m[38;5;8m[[0m2021-11-11T18:05:55.893040000Z [0m[32mINFO [0m solana_ledger::blockstore[0m[38;5;8m][0m Maximum open file descriptors: 500000
+[0m[38;5;8m[[0m2021-11-11T18:05:55.893081500Z [0m[32mINFO [0m solana_ledger::blockstore[0m[38;5;8m][0m Opening database at "test-ledger/rocksdb"
+[0m[38;5;8m[[0m2021-11-11T18:05:56.252617500Z [0m[32mINFO [0m solana_ledger::blockstore[0m[38;5;8m][0m "test-ledger/rocksdb" open took 359ms
+[0m[38;5;8m[[0m2021-11-11T18:05:56.259287700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m metrics disabled: SOLANA_METRICS_CONFIG: environment variable not found
+[0m[38;5;8m[[0m2021-11-11T18:05:56.259425900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: shred_insert_is_full total_time_ms=1i slot=0i last_index=2i num_repaired=0i num_recovered=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:56.317368600Z [0m[32mINFO [0m solana_runtime::hardened_unpack[0m[38;5;8m][0m Extracting "test-ledger/genesis.tar.bz2"...
+[0m[38;5;8m[[0m2021-11-11T18:05:56.338612700Z [0m[32mINFO [0m solana_runtime::hardened_unpack[0m[38;5;8m][0m unpacked 10 entries total
+[0m[38;5;8m[[0m2021-11-11T18:05:56.338623400Z [0m[32mINFO [0m solana_runtime::hardened_unpack[0m[38;5;8m][0m Extracted "test-ledger/genesis.tar.bz2" in 21.1959ms
+[0m[38;5;8m[[0m2021-11-11T18:05:56.340189700Z [0m[33mWARN [0m solana_core::validator[0m[38;5;8m][0m identity: FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267
+[0m[38;5;8m[[0m2021-11-11T18:05:56.340199800Z [0m[33mWARN [0m solana_core::validator[0m[38;5;8m][0m vote account: 5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm
+[0m[38;5;8m[[0m2021-11-11T18:05:56.340255900Z [0m[33mWARN [0m solana_core::validator[0m[38;5;8m][0m authorized voter: 5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm
+[0m[38;5;8m[[0m2021-11-11T18:05:56.340263400Z [0m[32mINFO [0m solana_core::validator[0m[38;5;8m][0m Initializing sigverify...
+[0m[38;5;8m[[0m2021-11-11T18:05:56.340265400Z [0m[32mINFO [0m solana_core::validator[0m[38;5;8m][0m Done.
+[0m[38;5;8m[[0m2021-11-11T18:05:56.340268300Z [0m[32mINFO [0m solana_core::validator[0m[38;5;8m][0m Cleaning accounts paths..
+[0m[38;5;8m[[0m2021-11-11T18:05:56.340317600Z [0m[33mWARN [0m solana_core::validator[0m[38;5;8m][0m encountered error removing accounts path: "test-ledger/accounts": No such file or directory (os error 2)
+[0m[38;5;8m[[0m2021-11-11T18:05:56.340363700Z [0m[32mINFO [0m solana_core::validator[0m[38;5;8m][0m done. clean_accounts_paths took 60us
+[0m[38;5;8m[[0m2021-11-11T18:05:56.340419400Z [0m[32mINFO [0m solana_core::validator[0m[38;5;8m][0m loading ledger from "test-ledger"...
+[0m[38;5;8m[[0m2021-11-11T18:05:56.342936100Z [0m[32mINFO [0m solana_core::validator[0m[38;5;8m][0m genesis hash: 62TapmEx27rPSVf9MQn1HhcWqukwpd4L6pKbHf5u7Nfr
+[0m[38;5;8m[[0m2021-11-11T18:05:56.342976200Z [0m[32mINFO [0m solana_ledger::blockstore[0m[38;5;8m][0m Maximum open file descriptors: 500000
+[0m[38;5;8m[[0m2021-11-11T18:05:56.342978900Z [0m[32mINFO [0m solana_ledger::blockstore[0m[38;5;8m][0m Opening database at "test-ledger/rocksdb"
+[0m[38;5;8m[[0m2021-11-11T18:05:56.572387500Z [0m[32mINFO [0m solana_ledger::blockstore[0m[38;5;8m][0m "test-ledger/rocksdb" open took 229ms
+[0m[38;5;8m[[0m2021-11-11T18:05:56.573982300Z [0m[32mINFO [0m solana_ledger::bank_forks_utils[0m[38;5;8m][0m Initializing snapshot path: "test-ledger/snapshot"
+[0m[38;5;8m[[0m2021-11-11T18:05:56.575347600Z [0m[32mINFO [0m solana_ledger::bank_forks_utils[0m[38;5;8m][0m No snapshot package available; will load from genesis
+[0m[38;5;8m[[0m2021-11-11T18:05:56.575361800Z [0m[32mINFO [0m solana_ledger::bank_forks_utils[0m[38;5;8m][0m Processing ledger from genesis
+[0m[38;5;8m[[0m2021-11-11T18:05:56.785568100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp get_timestamp_estimate_us=123i
+[0m[38;5;8m[[0m2021-11-11T18:05:56.785587000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp-correction slot=0i from_genesis=1636653955i corrected=0i ancestor_timestamp=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:56.785707300Z [0m[32mINFO [0m solana_ledger::blockstore_processor[0m[38;5;8m][0m processing ledger for slot 0...
+[0m[38;5;8m[[0m2021-11-11T18:05:56.788587300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: load_to_collect_rent_eagerly_scan_elapsed total_elapsed=65i latest_slot_elapsed=0i read_lock_elapsed=15i load_account_elapsed=16i iterator_elapsed=30i num_keys_iterated=1i
+[0m[38;5;8m[[0m2021-11-11T18:05:56.788646300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: collect_rent_eagerly accounts=1i
+[0m[38;5;8m[[0m2021-11-11T18:05:56.791015800Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m bank frozen: 0 hash: 6wQPvaAJPC4WbJ3QGJPLbVucPKHeB75nxs9PPg8VQENd accounts_delta: 7EiCaxMpw53rScWPo1EMcvVj3yAiZ9GNyCiGV4KdsRqF signature_count: 0 last_blockhash: 62TapmEx27rPSVf9MQn1HhcWqukwpd4L6pKbHf5u7Nfr capitalization: 503000502132482495
+[0m[38;5;8m[[0m2021-11-11T18:05:56.791031000Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m accounts hash slot: 0 stats: BankHashStats { num_updated_accounts: 90, num_removed_accounts: 0, num_lamports_stored: 503000502175189056, total_data_len: 535787, num_executable_accounts: 15 }
+[0m[38;5;8m[[0m2021-11-11T18:05:56.791060900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_cache_size num_roots=0i num_slots=0i total_unique_writes_size=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:56.791140400Z [0m[32mINFO [0m solana_ledger::blockstore_processor[0m[38;5;8m][0m processing ledger from slot 0...
+[0m[38;5;8m[[0m2021-11-11T18:05:56.791269700Z [0m[32mINFO [0m solana_ledger::blockstore_processor[0m[38;5;8m][0m ledger holds data through slot 0
+[0m[38;5;8m[[0m2021-11-11T18:05:56.825139100Z [0m[32mINFO [0m solana_ledger::blockstore_processor[0m[38;5;8m][0m load_frozen_forks() latest root from blockstore: 0, max_root: 0
+[0m[38;5;8m[[0m2021-11-11T18:05:56.841034500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: calculate_accounts_hash_without_index accounts_scan=3717i eliminate_zeros=10920i hash=286i hash_time_pre_us=0i sort=269i hash_total=88i storage_sort_us=30i unreduced_entries=90i collect_snapshots_us=267i num_snapshot_storage=1i min_bin_size=0i max_bin_size=1i total=15489i
+[0m[38;5;8m[[0m2021-11-11T18:05:56.841093000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: process_blockstore_from_root total_time_us=34135i frozen_banks=1i slot=0i forks=1i calculate_capitalization_us=15801i untar_us=0i rebuild_bank_from_snapshots_us=0i verify_snapshot_bank_us=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:56.841093400Z [0m[32mINFO [0m solana_ledger::blockstore_processor[0m[38;5;8m][0m ledger processing timing: ExecuteTimings { check_us: 0, load_us: 0, execute_us: 0, store_us: 0, update_stakes_cache_us: 0, total_batches_len: 0, num_execute_batches: 0, details: ExecuteDetailsTimings { serialize_us: 0, create_vm_us: 0, execute_us: 0, deserialize_us: 0, changed_account_count: 0, total_account_count: 0, total_data_size: 0, data_size_changed: 0, per_program_timings: {} } }
+[0m[38;5;8m[[0m2021-11-11T18:05:56.841501800Z [0m[32mINFO [0m solana_ledger::blockstore_processor[0m[38;5;8m][0m ledger processed in 34 ms, 135 µs and 900 ns. root slot is 0, 1 fork at 0, with 1 frozen bank
+[0m[38;5;8m[[0m2021-11-11T18:05:56.841784600Z [0m[32mINFO [0m solana_core::validator[0m[38;5;8m][0m Ignoring expected failed tower restore because this is the initial validator start with the vote account...
+[0m[38;5;8m[[0m2021-11-11T18:05:56.842766600Z [0m[32mINFO [0m solana_core::validator[0m[38;5;8m][0m Tower state: Tower { node_pubkey: FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267, threshold_depth: 8, threshold_size: 0.6666666666666666, vote_state: VoteState { node_pubkey: FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267, authorized_withdrawer: 5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm, commission: 0, votes: [], root_slot: Some(0), authorized_voters: AuthorizedVoters { authorized_voters: {0: 5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm} }, prior_voters: CircBuf { buf: [(11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0), (11111111111111111111111111111111, 0, 0)], idx: 31, is_empty: true }, epoch_credits: [], last_timestamp: BlockTimestamp { slot: 0, timestamp: 0 } }, last_vote: Vote { slots: [], hash: 11111111111111111111111111111111, timestamp: None }, last_vote_tx_blockhash: 11111111111111111111111111111111, last_timestamp: BlockTimestamp { slot: 0, timestamp: 0 }, path: "test-ledger/tower-FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267.bin", tmp_path: "test-ledger/tower-FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267.bin.new", stray_restored_slot: None, last_switch_threshold_check: None }
+[0m[38;5;8m[[0m2021-11-11T18:05:56.843162000Z [0m[32mINFO [0m solana_core::system_monitor_service[0m[38;5;8m][0m Starting SystemMonitorService
+[0m[38;5;8m[[0m2021-11-11T18:05:56.843344500Z [0m[32mINFO [0m solana_core::sample_performance_service[0m[38;5;8m][0m Starting SamplePerformance service
+[0m[38;5;8m[[0m2021-11-11T18:05:56.843387600Z [0m[32mINFO [0m solana_core::validator[0m[38;5;8m][0m Starting validator with working bank slot 0
+[0m[38;5;8m[[0m2021-11-11T18:05:56.845412600Z [0m[32mINFO [0m solana_core::validator[0m[38;5;8m][0m ContactInfo { id: FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267, gossip: 127.0.0.1:1024, tvu: 127.0.0.1:1025, tvu_forwards: 127.0.0.1:1026, repair: 127.0.0.1:1031, tpu: 127.0.0.1:1027, tpu_forwards: 127.0.0.1:1028, tpu_vote: 127.0.0.1:1029, rpc: 127.0.0.1:8899, rpc_pubsub: 127.0.0.1:8900, serve_repair: 127.0.0.1:1032, wallclock: 1636653956843, shred_version: 57599 }
+[0m[38;5;8m[[0m2021-11-11T18:05:56.845541800Z [0m[32mINFO [0m solana_core::validator[0m[38;5;8m][0m local gossip address: 0.0.0.0:1024
+[0m[38;5;8m[[0m2021-11-11T18:05:56.845551700Z [0m[32mINFO [0m solana_core::validator[0m[38;5;8m][0m local broadcast address: 0.0.0.0:1033
+[0m[38;5;8m[[0m2021-11-11T18:05:56.845553900Z [0m[32mINFO [0m solana_core::validator[0m[38;5;8m][0m local repair address: 0.0.0.0:1031
+[0m[38;5;8m[[0m2021-11-11T18:05:56.845555700Z [0m[32mINFO [0m solana_core::validator[0m[38;5;8m][0m local retransmit address: 0.0.0.0:1030
+[0m[38;5;8m[[0m2021-11-11T18:05:57.293195700Z [0m[32mINFO [0m solana_core::validator[0m[38;5;8m][0m Starting PoH: epoch=0 slot=0 tick_height=64 blockhash=62TapmEx27rPSVf9MQn1HhcWqukwpd4L6pKbHf5u7Nfr leader=Some(FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267)
+[0m[38;5;8m[[0m2021-11-11T18:05:57.293517800Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m poh_record: max_tick_height 64 reached, clearing working_bank 0
+[0m[38;5;8m[[0m2021-11-11T18:05:57.293623000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: leader-slot-start-to-cleared-elapsed-ms slot=0i elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.295884100Z [0m[32mINFO [0m solana_rpc::rpc_service[0m[38;5;8m][0m rpc bound to 0.0.0.0:8899
+[0m[38;5;8m[[0m2021-11-11T18:05:57.295899500Z [0m[32mINFO [0m solana_rpc::rpc_service[0m[38;5;8m][0m rpc configuration: JsonRpcConfig { enable_rpc_transaction_history: true, enable_cpi_and_log_storage: true, identity_pubkey: FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267, faucet_addr: Some(0.0.0.0:9900), health_check_slot_distance: 0, enable_bigtable_ledger_storage: false, enable_bigtable_ledger_upload: false, max_multiple_accounts: None, account_indexes: AccountSecondaryIndexes { keys: None, indexes: {} }, rpc_threads: 0, rpc_bigtable_timeout: None, minimal_api: false, obsolete_v1_7_api: false, rpc_scan_and_fix_roots: false }
+[0m[38;5;8m[[0m2021-11-11T18:05:57.298438900Z [0m[32mINFO [0m solana_rpc::rpc_pubsub_service[0m[38;5;8m][0m rpc_pubsub bound to 0.0.0.0:8900
+[0m[38;5;8m[[0m2021-11-11T18:05:57.299875200Z [0m[32mINFO [0m solana_net_utils::ip_echo_server[0m[38;5;8m][0m bound to 0.0.0.0:1024
+[0m[38;5;8m[[0m2021-11-11T18:05:57.302135900Z [0m[32mINFO [0m solana_sys_tuner[0m[38;5;8m][0m Sending tuning request
+[0m[38;5;8m[[0m2021-11-11T18:05:57.302171100Z [0m[33mWARN [0m solana_sys_tuner[0m[38;5;8m][0m Failed to send tuning request, is `solana-sys-tuner` running? Os { code: 2, kind: NotFound, message: "No such file or directory" }
+[0m[38;5;8m[[0m2021-11-11T18:05:57.304632500Z [0m[32mINFO [0m solana_core::tvu[0m[38;5;8m][0m snapshot_interval_slots: 100
+[0m[38;5;8m[[0m2021-11-11T18:05:57.305040900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cost-update-service-stats total_elapsed_us=1636653957304000i update_cost_model_count=0i update_cost_model_elapsed=0i persist_cost_table_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.305127700Z [0m[32mINFO [0m solana_core::ledger_cleanup_service[0m[38;5;8m][0m LedgerCleanupService active. max ledger shreds=10000, compaction interval=100
+[0m[38;5;8m[[0m2021-11-11T18:05:57.305235700Z [0m[32mINFO [0m solana_runtime::accounts_background_service[0m[38;5;8m][0m AccountsBackgroundService active
+[0m[38;5;8m[[0m2021-11-11T18:05:57.305503200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-observed slot=0i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.305668300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: compute_bank_stats-best_slot computed_slot=0i overall_best_slot=0i overall_best_hash="6wQPvaAJPC4WbJ3QGJPLbVucPKHeB75nxs9PPg8VQENd" elapsed=50i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.305671100Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m 5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm slot_weight: 0 0 0 0
+[0m[38;5;8m[[0m2021-11-11T18:05:57.305677900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank_weight slot=0i weight="0"
+[0m[38;5;8m[[0m2021-11-11T18:05:57.305804500Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m voting: 0 0
+[0m[38;5;8m[[0m2021-11-11T18:05:57.305945900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-vote latest=0i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.307931400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: validator-new id="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267"
+[0m[38;5;8m[[0m2021-11-11T18:05:57.309340200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: block-commitment-cache aggregate-commitment-ms=0i highest-confirmed-root=0i highest-confirmed-slot=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.309507200Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m vote bank: Some((0, SameFork)) reset bank: 0
+[0m[38;5;8m[[0m2021-11-11T18:05:57.309608700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: blocks_produced num_blocks_on_fork=0i num_dropped_blocks_on_fork=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.309635000Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m reset poh from: 62TapmEx27rPSVf9MQn1HhcWqukwpd4L6pKbHf5u7Nfr,65,0 to: 62TapmEx27rPSVf9MQn1HhcWqukwpd4L6pKbHf5u7Nfr,0
+[0m[38;5;8m[[0m2021-11-11T18:05:57.309725600Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267 reset PoH to tick 64 (within slot 0). My next leader slot is 1
+[0m[38;5;8m[[0m2021-11-11T18:05:57.309748800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: pubsub_notification_entries notification_entry_processing_count=1i notification_entry_processing_time_us=349i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.309824300Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m new fork:1 parent:0 (leader) root:0
+[0m[38;5;8m[[0m2021-11-11T18:05:57.309828900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-new_leader slot=1i leader="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267"
+[0m[38;5;8m[[0m2021-11-11T18:05:57.309842900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-my_leader_slot slot=1i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.310059800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-new_from_parent-heights slot_height=1i block_height=1i parent_slot_height=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.310604700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp get_timestamp_estimate_us=4i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.310615000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp-correction slot=1i from_genesis=1636653955i corrected=1636653955i ancestor_timestamp=1636653955i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.310703300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-loop-voting-stats vote_push_us=0i vote_send_us=0i generate_vote_us=305i update_commitment_cache_us=52i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.310711300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-loop-timing-stats total_elapsed_us=1636653957310000i collect_frozen_banks_elapsed=1i compute_bank_stats_elapsed=377i select_vote_and_reset_forks_elapsed=13i start_leader_elapsed=869i reset_bank_elapsed=249i voting_elapsed=3688i select_forks_elapsed=1i compute_slot_stats_elapsed=20i generate_new_bank_forks_elapsed=56i replay_active_banks_elapsed=118i process_gossip_duplicate_confirmed_slots_elapsed=37i process_unfrozen_gossip_verified_vote_hashes_elapsed=15i wait_receive_elapsed=47i heaviest_fork_failures_elapsed=0i bank_count=0i process_duplicate_slots_elapsed=17i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.311426900Z [0m[32mINFO [0m solana_gossip::gossip_service[0m[38;5;8m][0m Entrypoint: Some(127.0.0.1:1024)
+[0m[38;5;8m[[0m2021-11-11T18:05:57.311439700Z [0m[32mINFO [0m solana_gossip::gossip_service[0m[38;5;8m][0m Node Id: DRA6nmFTe2ZKdMFxFp5vSwr8K1AkacB4BEwBYTzYx1dN
+[0m[38;5;8m[[0m2021-11-11T18:05:57.505054900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: receive_window_stats num_packets=0i num_shreds=0i num_repairs=0i elapsed_micros=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.505071500Z [0m[32mINFO [0m solana_core::window_service[0m[38;5;8m][0m num addresses: 0, top packets by source: []
+[0m[38;5;8m[[0m2021-11-11T18:05:57.611674400Z [0m[32mINFO [0m solana_gossip::cluster_info[0m[38;5;8m][0m Setting shred version to 57599 from entrypoint FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267
+[0m[38;5;8m[[0m2021-11-11T18:05:57.717194800Z [0m[32mINFO [0m solana_gossip::gossip_service[0m[38;5;8m][0m discover success in 0s...
+    IP Address        |Age(ms)| Node identifier                              | Version |Gossip|TPUvote| TPU  |TPUfwd| TVU  |TVUfwd|Repair|ServeR|ShredVer
+    ------------------+-------+----------------------------------------------+---------+------+------+-------+------+------+------+------+------+--------
+    none            me|   406 | DRA6nmFTe2ZKdMFxFp5vSwr8K1AkacB4BEwBYTzYx1dN |  1.8.3  | none | none | none | none | none | none | none | none | 0
+    127.0.0.1         |   200 | FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267 |  1.8.3  | 1024 | 1029 | 1027 | 1028 | 1025 | 1026 | 1031 | 1032 | 57599
+    Nodes: 1
+    Spies: 1
+[0m[38;5;8m[[0m2021-11-11T18:05:57.719071500Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m poh_record: max_tick_height 128 reached, clearing working_bank 1
+[0m[38;5;8m[[0m2021-11-11T18:05:57.719117900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: leader-slot-start-to-cleared-elapsed-ms slot=1i elapsed=408i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.719234700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-slot-stats slot=1i fetch_entries_time=0i fetch_entries_fail_time=0i entry_poh_verification_time=0i entry_transaction_verification_time=0i replay_time=0i replay_total_elapsed=408293i total_entries=0i total_shreds=0i check_us=0i load_us=0i execute_us=0i store_us=0i update_stakes_cache_us=0i total_batches_len=0i num_execute_batches=0i serialize_us=0i create_vm_us=0i execute_inner_us=0i deserialize_us=0i changed_account_count=0i total_account_count=0i total_data_size=0i data_size_changed=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.719241900Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m bank frozen: 1
+[0m[38;5;8m[[0m2021-11-11T18:05:57.719245700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: per_program_timings slot=1i pubkey="all" execute_us=0i accumulated_units=0i count=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.719377400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: load_to_collect_rent_eagerly_scan_elapsed total_elapsed=23i latest_slot_elapsed=0i read_lock_elapsed=0i load_account_elapsed=0i iterator_elapsed=0i num_keys_iterated=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.719408200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: shred_insert_is_full total_time_ms=410i slot=1i last_index=63i num_repaired=0i num_recovered=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.719448800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: collect_rent_eagerly accounts=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.720369300Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m bank frozen: 1 hash: 3RwvNLriKr4MnUPTEEXfZvGYYafdDg5HzNTkAovKVkhZ accounts_delta: GnPyqTLAVV9moP6JzaCuLRfJmkYZdagpYxJzyeyPskYX signature_count: 2 last_blockhash: 7wxGydHB5YCTozyvhCrWWp6etya8BkMDkiJ41pNMewYN capitalization: 503000502276916414
+[0m[38;5;8m[[0m2021-11-11T18:05:57.720382800Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m accounts hash slot: 1 stats: BankHashStats { num_updated_accounts: 7, num_removed_accounts: 0, num_lamports_stored: 1000501101635760, total_data_len: 161372, num_executable_accounts: 0 }
+[0m[38;5;8m[[0m2021-11-11T18:05:57.720437600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_cache_size num_roots=0i num_slots=0i total_unique_writes_size=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.720444800Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 1,
+            root: 0,
+            frozen_hash: Some(3RwvNLriKr4MnUPTEEXfZvGYYafdDg5HzNTkAovKVkhZ),
+            update: Frozen
+[0m[38;5;8m[[0m2021-11-11T18:05:57.720456700Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: None,
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:05:57.720818200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-transmit-shreds-stats slot=1i end_to_end_elapsed=405462i transmit_elapsed=1024i send_mmsg_elapsed=90i get_peers_elapsed=0i num_shreds=128i shred_select=843i total_packets=0i dropped_packets=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.720829400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-process-shreds-stats slot=1i shredding_time=12581i receive_time=383942i num_data_shreds=64i slot_broadcast_time=405485i get_leader_schedule_time=18i serialize_shreds_time=82i gen_data_time=11813i gen_coding_time=2726i sign_coding_time=915i coding_send_time=2726i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.721133200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-insert-shreds-stats slot=1i end_to_end_elapsed=405798i insert_shreds_elapsed=20681i num_shreds=128i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.723412700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-observed slot=0i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.723492900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: compute_bank_stats-best_slot computed_slot=1i overall_best_slot=1i overall_best_hash="3RwvNLriKr4MnUPTEEXfZvGYYafdDg5HzNTkAovKVkhZ" elapsed=41i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.723519400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank_weight slot=1i weight="0"
+[0m[38;5;8m[[0m2021-11-11T18:05:57.723491300Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m 5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm slot_weight: 1 0 0 0
+[0m[38;5;8m[[0m2021-11-11T18:05:57.723540200Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m validator fork confirmed 0 418ms
+[0m[38;5;8m[[0m2021-11-11T18:05:57.723586300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: validator-confirmation duration_ms=418i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.723583600Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 0,
+            root: 0,
+            frozen_hash: Some(6wQPvaAJPC4WbJ3QGJPLbVucPKHeB75nxs9PPg8VQENd),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:05:57.723616900Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m voting: 1 0
+[0m[38;5;8m[[0m2021-11-11T18:05:57.723645600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-vote latest=1i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.725563400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: block-commitment-cache aggregate-commitment-ms=0i highest-confirmed-root=0i highest-confirmed-slot=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.725951200Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m vote bank: Some((1, SameFork)) reset bank: 1
+[0m[38;5;8m[[0m2021-11-11T18:05:57.725982500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: blocks_produced num_blocks_on_fork=1i num_dropped_blocks_on_fork=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.726016100Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m reset poh from: 7wxGydHB5YCTozyvhCrWWp6etya8BkMDkiJ41pNMewYN,129,1 to: 7wxGydHB5YCTozyvhCrWWp6etya8BkMDkiJ41pNMewYN,1
+[0m[38;5;8m[[0m2021-11-11T18:05:57.726026100Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267 reset PoH to tick 128 (within slot 1). My next leader slot is 2
+[0m[38;5;8m[[0m2021-11-11T18:05:57.726095200Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m new fork:2 parent:1 (leader) root:0
+[0m[38;5;8m[[0m2021-11-11T18:05:57.726105500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-new_leader slot=2i leader="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267"
+[0m[38;5;8m[[0m2021-11-11T18:05:57.726115100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-my_leader_slot slot=2i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.726149300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-new_from_parent-heights slot_height=2i block_height=2i parent_slot_height=1i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.726465000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp get_timestamp_estimate_us=2i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.726471900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp-correction slot=2i from_genesis=1636653955i corrected=1636653955i ancestor_timestamp=1636653955i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.732191000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot_elapsed average_elapsed_ms=425i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.732206100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot slot=1i
+[0m[38;5;8m[[0m2021-11-11T18:05:57.732258100Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 1,
+            root: 0,
+            frozen_hash: Some(3RwvNLriKr4MnUPTEEXfZvGYYafdDg5HzNTkAovKVkhZ),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:05:57.732273700Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: Some(3RwvNLriKr4MnUPTEEXfZvGYYafdDg5HzNTkAovKVkhZ),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:05:57.732279800Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (1, 3RwvNLriKr4MnUPTEEXfZvGYYafdDg5HzNTkAovKVkhZ) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:05:57.805606200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cost_tracker_stats bank_slot=1i block_cost=47224i transaction_count=2i number_of_accounts=2i costliest_account="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267" costliest_account_cost=47224i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.135590100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_db_store_timings hash_accounts=458i store_accounts=2642i update_index=61i handle_reclaims=48i append_accounts=993i find_storage=828i num_accounts=103i total_data=727434i read_only_accounts_cache_entries=0i read_only_accounts_cache_data_size=0i read_only_accounts_cache_hits=0i read_only_accounts_cache_misses=0i calc_stored_meta_us=173i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.135646100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_db_store_timings2 recycle_store_count=0i current_recycle_store_count=0i current_recycle_store_bytes=0i create_store_count=8i store_get_slot_store=11i store_find_existing=272i dropped_stores=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.135596600Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m poh_record: max_tick_height 192 reached, clearing working_bank 2
+[0m[38;5;8m[[0m2021-11-11T18:05:58.135803100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: leader-slot-start-to-cleared-elapsed-ms slot=2i elapsed=409i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.135946300Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m bank frozen: 2
+[0m[38;5;8m[[0m2021-11-11T18:05:58.135949300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-slot-stats slot=2i fetch_entries_time=0i fetch_entries_fail_time=0i entry_poh_verification_time=0i entry_transaction_verification_time=0i replay_time=0i replay_total_elapsed=409366i total_entries=0i total_shreds=0i check_us=0i load_us=0i execute_us=0i store_us=0i update_stakes_cache_us=0i total_batches_len=0i num_execute_batches=0i serialize_us=0i create_vm_us=0i execute_inner_us=0i deserialize_us=0i changed_account_count=0i total_account_count=0i total_data_size=0i data_size_changed=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.135988200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: per_program_timings slot=2i pubkey="all" execute_us=0i accumulated_units=0i count=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.136011600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: shred_insert_is_full total_time_ms=409i slot=2i last_index=63i num_repaired=0i num_recovered=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.136075200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: load_to_collect_rent_eagerly_scan_elapsed total_elapsed=4i latest_slot_elapsed=0i read_lock_elapsed=0i load_account_elapsed=0i iterator_elapsed=0i num_keys_iterated=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.136082400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: collect_rent_eagerly accounts=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.137005300Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m bank frozen: 2 hash: 47LNeWduAVUsP3qD2K7gKPu233fQscFF9v6Dv13d9QAc accounts_delta: 2vFqpLTP9ukEusoy5UV7zbcNxmMfUtw7oaD11PQQmrz3 signature_count: 2 last_blockhash: GDrWQh8yJAxakH7DGt6p6ADnhSesgmVxGF74ojdW6hLM capitalization: 503000502276911414
+[0m[38;5;8m[[0m2021-11-11T18:05:58.137017200Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m accounts hash slot: 2 stats: BankHashStats { num_updated_accounts: 8, num_removed_accounts: 0, num_lamports_stored: 1001001101620760, total_data_len: 161372, num_executable_accounts: 0 }
+[0m[38;5;8m[[0m2021-11-11T18:05:58.137093000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_cache_size num_roots=0i num_slots=0i total_unique_writes_size=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.137171700Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 2,
+            root: 0,
+            frozen_hash: Some(47LNeWduAVUsP3qD2K7gKPu233fQscFF9v6Dv13d9QAc),
+            update: Frozen
+[0m[38;5;8m[[0m2021-11-11T18:05:58.137200200Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: None,
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:05:58.137347900Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m 5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm slot_weight: 2 0 0 1
+[0m[38;5;8m[[0m2021-11-11T18:05:58.137357300Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m validator fork confirmed 1 826ms
+[0m[38;5;8m[[0m2021-11-11T18:05:58.137360900Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 1,
+            root: 0,
+            frozen_hash: Some(3RwvNLriKr4MnUPTEEXfZvGYYafdDg5HzNTkAovKVkhZ),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:05:58.137365200Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: true,
+            cluster_duplicate_confirmed_hash: Some(3RwvNLriKr4MnUPTEEXfZvGYYafdDg5HzNTkAovKVkhZ),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:05:58.137369400Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (1, 3RwvNLriKr4MnUPTEEXfZvGYYafdDg5HzNTkAovKVkhZ) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:05:58.137381300Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m voting: 2 0
+[0m[38;5;8m[[0m2021-11-11T18:05:58.137578300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-observed slot=1i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.137586200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: compute_bank_stats-best_slot computed_slot=2i overall_best_slot=2i overall_best_hash="47LNeWduAVUsP3qD2K7gKPu233fQscFF9v6Dv13d9QAc" elapsed=4i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.137588800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank_weight slot=2i weight="0"
+[0m[38;5;8m[[0m2021-11-11T18:05:58.137590800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: validator-confirmation duration_ms=826i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.137617200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-vote latest=2i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.138014700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-process-shreds-stats slot=2i shredding_time=10459i receive_time=386334i num_data_shreds=64i slot_broadcast_time=406041i get_leader_schedule_time=0i serialize_shreds_time=59i gen_data_time=9989i gen_coding_time=2443i sign_coding_time=1635i coding_send_time=2443i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.138079200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-transmit-shreds-stats slot=2i end_to_end_elapsed=406060i transmit_elapsed=838i send_mmsg_elapsed=136i get_peers_elapsed=0i num_shreds=128i shred_select=620i total_packets=0i dropped_packets=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.138197300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-insert-shreds-stats slot=2i end_to_end_elapsed=406228i insert_shreds_elapsed=19259i num_shreds=128i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.139535600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: block-commitment-cache aggregate-commitment-ms=0i highest-confirmed-root=0i highest-confirmed-slot=1i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.139543600Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m vote bank: Some((2, SameFork)) reset bank: 2
+[0m[38;5;8m[[0m2021-11-11T18:05:58.139584400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: blocks_produced num_blocks_on_fork=2i num_dropped_blocks_on_fork=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.139585900Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m reset poh from: GDrWQh8yJAxakH7DGt6p6ADnhSesgmVxGF74ojdW6hLM,192,2 to: GDrWQh8yJAxakH7DGt6p6ADnhSesgmVxGF74ojdW6hLM,2
+[0m[38;5;8m[[0m2021-11-11T18:05:58.139596600Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267 reset PoH to tick 192 (within slot 2). My next leader slot is 3
+[0m[38;5;8m[[0m2021-11-11T18:05:58.139625100Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m new fork:3 parent:2 (leader) root:0
+[0m[38;5;8m[[0m2021-11-11T18:05:58.139634200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-new_leader slot=3i leader="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267"
+[0m[38;5;8m[[0m2021-11-11T18:05:58.139643100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-my_leader_slot slot=3i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.139693800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-new_from_parent-heights slot_height=3i block_height=3i parent_slot_height=2i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.139947800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp get_timestamp_estimate_us=3i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.139957300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp-correction slot=3i from_genesis=1636653956i corrected=1636653957i ancestor_timestamp=1636653955i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.145277000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot_elapsed average_elapsed_ms=413i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.145290600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot slot=2i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.145384500Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 2,
+            root: 0,
+            frozen_hash: Some(47LNeWduAVUsP3qD2K7gKPu233fQscFF9v6Dv13d9QAc),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:05:58.145398000Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: Some(47LNeWduAVUsP3qD2K7gKPu233fQscFF9v6Dv13d9QAc),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:05:58.145403600Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (2, 47LNeWduAVUsP3qD2K7gKPu233fQscFF9v6Dv13d9QAc) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:05:58.206002700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cost_tracker_stats bank_slot=2i block_cost=47224i transaction_count=2i number_of_accounts=2i costliest_account="5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm" costliest_account_cost=47224i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.306186800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cost-update-service-stats total_elapsed_us=1002000i update_cost_model_count=0i update_cost_model_elapsed=151i persist_cost_table_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.311658800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-loop-voting-stats vote_push_us=0i vote_send_us=0i generate_vote_us=538i update_commitment_cache_us=78i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.311673600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-loop-timing-stats total_elapsed_us=1001000i collect_frozen_banks_elapsed=159i compute_bank_stats_elapsed=977i select_vote_and_reset_forks_elapsed=271i start_leader_elapsed=818i reset_bank_elapsed=163i voting_elapsed=4488i select_forks_elapsed=151i compute_slot_stats_elapsed=99i generate_new_bank_forks_elapsed=2816i replay_active_banks_elapsed=10766i process_gossip_duplicate_confirmed_slots_elapsed=206i process_unfrozen_gossip_verified_vote_hashes_elapsed=48i wait_receive_elapsed=975827i heaviest_fork_failures_elapsed=2i bank_count=2i process_duplicate_slots_elapsed=3i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.317850800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cluster_info-num_nodes live_count=0i broadcast_count=1i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.345485100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: banking_stage-loop-stats id=1i process_packets_count=3i new_tx_count=2i dropped_packet_batches_count=0i dropped_packets_count=0i dropped_duplicated_packets_count=0i newly_buffered_packets_count=1i current_buffered_packet_batches_count=0i current_buffered_packets_count=0i rebuffered_packets_count=0i consumed_buffered_packets_count=1i cost_tracker_check_count=3i cost_forced_retry_transactions_count=0i consume_buffered_packets_elapsed=5692i process_packets_elapsed=8425i handle_retryable_packets_elapsed=0i filter_pending_packets_elapsed=39i packet_duplicate_check_elapsed=55i packet_conversion_elapsed=222i unprocessed_packet_conversion_elapsed=0i transaction_processing_elapsed=13452i cost_tracker_update_elapsed=15i cost_tracker_clone_elapsed=0i cost_tracker_check_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.408643200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: banking_stage-loop-stats id=3i process_packets_count=0i new_tx_count=0i dropped_packet_batches_count=0i dropped_packets_count=0i dropped_duplicated_packets_count=0i newly_buffered_packets_count=0i current_buffered_packet_batches_count=0i current_buffered_packets_count=0i rebuffered_packets_count=0i consumed_buffered_packets_count=0i cost_tracker_check_count=0i cost_forced_retry_transactions_count=0i consume_buffered_packets_elapsed=0i process_packets_elapsed=0i handle_retryable_packets_elapsed=0i filter_pending_packets_elapsed=0i packet_duplicate_check_elapsed=0i packet_conversion_elapsed=0i unprocessed_packet_conversion_elapsed=0i transaction_processing_elapsed=0i cost_tracker_update_elapsed=0i cost_tracker_clone_elapsed=0i cost_tracker_check_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.408774100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: banking_stage-loop-stats id=2i process_packets_count=0i new_tx_count=0i dropped_packet_batches_count=0i dropped_packets_count=0i dropped_duplicated_packets_count=0i newly_buffered_packets_count=0i current_buffered_packet_batches_count=0i current_buffered_packets_count=0i rebuffered_packets_count=0i consumed_buffered_packets_count=0i cost_tracker_check_count=0i cost_forced_retry_transactions_count=0i consume_buffered_packets_elapsed=0i process_packets_elapsed=0i handle_retryable_packets_elapsed=0i filter_pending_packets_elapsed=0i packet_duplicate_check_elapsed=0i packet_conversion_elapsed=0i unprocessed_packet_conversion_elapsed=0i transaction_processing_elapsed=0i cost_tracker_update_elapsed=0i cost_tracker_clone_elapsed=0i cost_tracker_check_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.408784700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: banking_stage-loop-stats id=0i process_packets_count=2i new_tx_count=2i dropped_packet_batches_count=0i dropped_packets_count=0i dropped_duplicated_packets_count=0i newly_buffered_packets_count=0i current_buffered_packet_batches_count=0i current_buffered_packets_count=0i rebuffered_packets_count=0i consumed_buffered_packets_count=0i cost_tracker_check_count=2i cost_forced_retry_transactions_count=0i consume_buffered_packets_elapsed=0i process_packets_elapsed=673i handle_retryable_packets_elapsed=0i filter_pending_packets_elapsed=9i packet_duplicate_check_elapsed=0i packet_conversion_elapsed=62i unprocessed_packet_conversion_elapsed=0i transaction_processing_elapsed=428i cost_tracker_update_elapsed=7i cost_tracker_clone_elapsed=0i cost_tracker_check_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.547962400Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m poh_record: max_tick_height 256 reached, clearing working_bank 3
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548002500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: leader-slot-start-to-cleared-elapsed-ms slot=3i elapsed=408i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548111800Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m bank frozen: 3
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548114100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-slot-stats slot=3i fetch_entries_time=0i fetch_entries_fail_time=0i entry_poh_verification_time=0i entry_transaction_verification_time=0i replay_time=0i replay_total_elapsed=408057i total_entries=0i total_shreds=0i check_us=0i load_us=0i execute_us=0i store_us=0i update_stakes_cache_us=0i total_batches_len=0i num_execute_batches=0i serialize_us=0i create_vm_us=0i execute_inner_us=0i deserialize_us=0i changed_account_count=0i total_account_count=0i total_data_size=0i data_size_changed=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548123400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: per_program_timings slot=3i pubkey="all" execute_us=0i accumulated_units=0i count=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548182800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: load_to_collect_rent_eagerly_scan_elapsed total_elapsed=6i latest_slot_elapsed=0i read_lock_elapsed=0i load_account_elapsed=0i iterator_elapsed=0i num_keys_iterated=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548197600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: collect_rent_eagerly accounts=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548200700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: shred_insert_is_full total_time_ms=412i slot=3i last_index=64i num_repaired=0i num_recovered=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548697700Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m bank frozen: 3 hash: 6zLtNBCkgQ46TynijbfSo2bdGPmFxjvZKP1GYHD2XPom accounts_delta: 6b36NGvsFeCW3Jjr9T8e7d2fgkRwamVy7zaHr5ZxRWHT signature_count: 2 last_blockhash: 8rhjT4ooPqhc3Fbsams9Gdxp54GSJaf2A4Mw48has6vp capitalization: 503000502276906414
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548713500Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m accounts hash slot: 3 stats: BankHashStats { num_updated_accounts: 8, num_removed_accounts: 0, num_lamports_stored: 1001001101610760, total_data_len: 161372, num_executable_accounts: 0 }
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548751500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_cache_size num_roots=0i num_slots=0i total_unique_writes_size=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548749200Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 3,
+            root: 0,
+            frozen_hash: Some(6zLtNBCkgQ46TynijbfSo2bdGPmFxjvZKP1GYHD2XPom),
+            update: Frozen
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548790600Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: None,
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548911800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-observed slot=2i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548920900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: compute_bank_stats-best_slot computed_slot=3i overall_best_slot=3i overall_best_hash="6zLtNBCkgQ46TynijbfSo2bdGPmFxjvZKP1GYHD2XPom" elapsed=5i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548920500Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m 5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm slot_weight: 3 0 0 2
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548924700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank_weight slot=3i weight="0"
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548932400Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m validator fork confirmed 2 822ms
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548951600Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 2,
+            root: 0,
+            frozen_hash: Some(47LNeWduAVUsP3qD2K7gKPu233fQscFF9v6Dv13d9QAc),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548960500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: validator-confirmation duration_ms=822i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548960500Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: true,
+            cluster_duplicate_confirmed_hash: Some(47LNeWduAVUsP3qD2K7gKPu233fQscFF9v6Dv13d9QAc),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:05:58.548997300Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (2, 47LNeWduAVUsP3qD2K7gKPu233fQscFF9v6Dv13d9QAc) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:05:58.549008900Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m voting: 3 0
+[0m[38;5;8m[[0m2021-11-11T18:05:58.549039800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-vote latest=3i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.549643600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-process-shreds-stats slot=3i shredding_time=10062i receive_time=388128i num_data_shreds=65i slot_broadcast_time=407362i get_leader_schedule_time=0i serialize_shreds_time=67i gen_data_time=9590i gen_coding_time=2771i sign_coding_time=1967i coding_send_time=2771i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.549658900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-transmit-shreds-stats slot=3i end_to_end_elapsed=407364i transmit_elapsed=816i send_mmsg_elapsed=65i get_peers_elapsed=0i num_shreds=192i shred_select=669i total_packets=0i dropped_packets=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.550182600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-insert-shreds-stats slot=3i end_to_end_elapsed=407881i insert_shreds_elapsed=18481i num_shreds=192i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.551204100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: block-commitment-cache aggregate-commitment-ms=0i highest-confirmed-root=0i highest-confirmed-slot=2i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.551260300Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m vote bank: Some((3, SameFork)) reset bank: 3
+[0m[38;5;8m[[0m2021-11-11T18:05:58.551603600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: blocks_produced num_blocks_on_fork=3i num_dropped_blocks_on_fork=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.551650700Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m reset poh from: 8rhjT4ooPqhc3Fbsams9Gdxp54GSJaf2A4Mw48has6vp,256,3 to: 8rhjT4ooPqhc3Fbsams9Gdxp54GSJaf2A4Mw48has6vp,3
+[0m[38;5;8m[[0m2021-11-11T18:05:58.551663900Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267 reset PoH to tick 256 (within slot 3). My next leader slot is 4
+[0m[38;5;8m[[0m2021-11-11T18:05:58.551696000Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m new fork:4 parent:3 (leader) root:0
+[0m[38;5;8m[[0m2021-11-11T18:05:58.551701900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-new_leader slot=4i leader="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267"
+[0m[38;5;8m[[0m2021-11-11T18:05:58.551711000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-my_leader_slot slot=4i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.551761200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-new_from_parent-heights slot_height=4i block_height=4i parent_slot_height=3i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.552344200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp get_timestamp_estimate_us=3i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.552352800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp-correction slot=4i from_genesis=1636653956i corrected=1636653957i ancestor_timestamp=1636653957i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.563638100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: poh_recorder slot=4i tick_lock_contention=946i record_us=3i flush_cache_no_tick_us=0i flush_cache_tick_us=5784i prepare_send_us=0i send_us=48i ticks_from_record=0i total_sleep_us=5567i tick_overhead=1i record_lock_contention=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.563933800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot_elapsed average_elapsed_ms=418i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.563951100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot slot=3i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.564166100Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 3,
+            root: 0,
+            frozen_hash: Some(6zLtNBCkgQ46TynijbfSo2bdGPmFxjvZKP1GYHD2XPom),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:05:58.564184700Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: Some(6zLtNBCkgQ46TynijbfSo2bdGPmFxjvZKP1GYHD2XPom),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:05:58.564190500Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (3, 6zLtNBCkgQ46TynijbfSo2bdGPmFxjvZKP1GYHD2XPom) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:05:58.606503100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cost_tracker_stats bank_slot=3i block_cost=47224i transaction_count=2i number_of_accounts=2i costliest_account="5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm" costliest_account_cost=47224i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.960499800Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m poh_record: max_tick_height 320 reached, clearing working_bank 4
+[0m[38;5;8m[[0m2021-11-11T18:05:58.960548000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: leader-slot-start-to-cleared-elapsed-ms slot=4i elapsed=408i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.960633600Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m bank frozen: 4
+[0m[38;5;8m[[0m2021-11-11T18:05:58.960634800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-slot-stats slot=4i fetch_entries_time=0i fetch_entries_fail_time=0i entry_poh_verification_time=0i entry_transaction_verification_time=0i replay_time=0i replay_total_elapsed=408209i total_entries=0i total_shreds=0i check_us=0i load_us=0i execute_us=0i store_us=0i update_stakes_cache_us=0i total_batches_len=0i num_execute_batches=0i serialize_us=0i create_vm_us=0i execute_inner_us=0i deserialize_us=0i changed_account_count=0i total_account_count=0i total_data_size=0i data_size_changed=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.960648200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: per_program_timings slot=4i pubkey="all" execute_us=0i accumulated_units=0i count=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.960710900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: load_to_collect_rent_eagerly_scan_elapsed total_elapsed=5i latest_slot_elapsed=0i read_lock_elapsed=0i load_account_elapsed=0i iterator_elapsed=0i num_keys_iterated=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.960720300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: collect_rent_eagerly accounts=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.960783500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: shred_insert_is_full total_time_ms=412i slot=4i last_index=64i num_repaired=0i num_recovered=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.961333100Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m bank frozen: 4 hash: 6KBV1Rh73XjknWohNN3dryh6wAMiBGHJMWnKz5deWp7Y accounts_delta: DCPuKjuni5mpYCzEpdwid3xZwgEuZ9LNo17idpXDWVQT signature_count: 2 last_blockhash: Cpz6TXP6j2cd1orZmMxWEFpL9tfLX1tizZkSPusVmWYv capitalization: 503000502276901414
+[0m[38;5;8m[[0m2021-11-11T18:05:58.961349100Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m accounts hash slot: 4 stats: BankHashStats { num_updated_accounts: 8, num_removed_accounts: 0, num_lamports_stored: 1001001101600760, total_data_len: 161372, num_executable_accounts: 0 }
+[0m[38;5;8m[[0m2021-11-11T18:05:58.961386800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_cache_size num_roots=0i num_slots=0i total_unique_writes_size=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.961384200Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 4,
+            root: 0,
+            frozen_hash: Some(6KBV1Rh73XjknWohNN3dryh6wAMiBGHJMWnKz5deWp7Y),
+            update: Frozen
+[0m[38;5;8m[[0m2021-11-11T18:05:58.961424500Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: None,
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:05:58.961547100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-observed slot=3i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.961565600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: compute_bank_stats-best_slot computed_slot=4i overall_best_slot=4i overall_best_hash="6KBV1Rh73XjknWohNN3dryh6wAMiBGHJMWnKz5deWp7Y" elapsed=7i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.961572100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank_weight slot=4i weight="0"
+[0m[38;5;8m[[0m2021-11-11T18:05:58.961563400Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m 5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm slot_weight: 4 0 0 3
+[0m[38;5;8m[[0m2021-11-11T18:05:58.961585000Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m validator fork confirmed 3 821ms
+[0m[38;5;8m[[0m2021-11-11T18:05:58.961606100Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 3,
+            root: 0,
+            frozen_hash: Some(6zLtNBCkgQ46TynijbfSo2bdGPmFxjvZKP1GYHD2XPom),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:05:58.961613100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: validator-confirmation duration_ms=821i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.961614700Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: true,
+            cluster_duplicate_confirmed_hash: Some(6zLtNBCkgQ46TynijbfSo2bdGPmFxjvZKP1GYHD2XPom),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:05:58.961650300Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (3, 6zLtNBCkgQ46TynijbfSo2bdGPmFxjvZKP1GYHD2XPom) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:05:58.961662400Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m voting: 4 0
+[0m[38;5;8m[[0m2021-11-11T18:05:58.961744200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-vote latest=4i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.962006700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-process-shreds-stats slot=4i shredding_time=10988i receive_time=386225i num_data_shreds=65i slot_broadcast_time=407513i get_leader_schedule_time=0i serialize_shreds_time=77i gen_data_time=10472i gen_coding_time=3118i sign_coding_time=2370i coding_send_time=3118i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.962016700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-transmit-shreds-stats slot=4i end_to_end_elapsed=407514i transmit_elapsed=819i send_mmsg_elapsed=68i get_peers_elapsed=0i num_shreds=192i shred_select=653i total_packets=0i dropped_packets=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.962386200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-insert-shreds-stats slot=4i end_to_end_elapsed=407894i insert_shreds_elapsed=18685i num_shreds=192i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.963694700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: block-commitment-cache aggregate-commitment-ms=0i highest-confirmed-root=0i highest-confirmed-slot=3i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.963719600Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m vote bank: Some((4, SameFork)) reset bank: 4
+[0m[38;5;8m[[0m2021-11-11T18:05:58.963751500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: blocks_produced num_blocks_on_fork=4i num_dropped_blocks_on_fork=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.963757200Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m reset poh from: Cpz6TXP6j2cd1orZmMxWEFpL9tfLX1tizZkSPusVmWYv,320,4 to: Cpz6TXP6j2cd1orZmMxWEFpL9tfLX1tizZkSPusVmWYv,4
+[0m[38;5;8m[[0m2021-11-11T18:05:58.963770800Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267 reset PoH to tick 320 (within slot 4). My next leader slot is 5
+[0m[38;5;8m[[0m2021-11-11T18:05:58.963796400Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m new fork:5 parent:4 (leader) root:0
+[0m[38;5;8m[[0m2021-11-11T18:05:58.963800300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-new_leader slot=5i leader="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267"
+[0m[38;5;8m[[0m2021-11-11T18:05:58.963807100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-my_leader_slot slot=5i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.963847600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-new_from_parent-heights slot_height=5i block_height=5i parent_slot_height=4i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.964120100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp get_timestamp_estimate_us=2i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.964149600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp-correction slot=5i from_genesis=1636653957i corrected=1636653958i ancestor_timestamp=1636653957i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.969623200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot_elapsed average_elapsed_ms=405i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.969635700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot slot=4i
+[0m[38;5;8m[[0m2021-11-11T18:05:58.969725700Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 4,
+            root: 0,
+            frozen_hash: Some(6KBV1Rh73XjknWohNN3dryh6wAMiBGHJMWnKz5deWp7Y),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:05:58.969738400Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: Some(6KBV1Rh73XjknWohNN3dryh6wAMiBGHJMWnKz5deWp7Y),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:05:58.969743800Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (4, 6KBV1Rh73XjknWohNN3dryh6wAMiBGHJMWnKz5deWp7Y) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:05:59.006904400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cost_tracker_stats bank_slot=4i block_cost=47224i transaction_count=2i number_of_accounts=2i costliest_account="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267" costliest_account_cost=47224i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.307265800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cost-update-service-stats total_elapsed_us=1001000i update_cost_model_count=0i update_cost_model_elapsed=66i persist_cost_table_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.315855400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-loop-voting-stats vote_push_us=0i vote_send_us=0i generate_vote_us=136i update_commitment_cache_us=31i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.315869800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-loop-timing-stats total_elapsed_us=1004000i collect_frozen_banks_elapsed=248i compute_bank_stats_elapsed=875i select_vote_and_reset_forks_elapsed=285i start_leader_elapsed=1076i reset_bank_elapsed=487i voting_elapsed=4301i select_forks_elapsed=120i compute_slot_stats_elapsed=150i generate_new_bank_forks_elapsed=3717i replay_active_banks_elapsed=6557i process_gossip_duplicate_confirmed_slots_elapsed=227i process_unfrozen_gossip_verified_vote_hashes_elapsed=58i wait_receive_elapsed=979964i heaviest_fork_failures_elapsed=0i bank_count=2i process_duplicate_slots_elapsed=2i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.322125900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cluster_info-num_nodes live_count=0i broadcast_count=1i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.369970000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: pubsub_notification_entries notification_entry_processing_count=34i notification_entry_processing_time_us=1876i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.369994100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: banking_stage-loop-stats id=1i process_packets_count=2i new_tx_count=1i dropped_packet_batches_count=0i dropped_packets_count=0i dropped_duplicated_packets_count=0i newly_buffered_packets_count=1i current_buffered_packet_batches_count=0i current_buffered_packets_count=0i rebuffered_packets_count=0i consumed_buffered_packets_count=1i cost_tracker_check_count=2i cost_forced_retry_transactions_count=0i consume_buffered_packets_elapsed=1707i process_packets_elapsed=5446i handle_retryable_packets_elapsed=0i filter_pending_packets_elapsed=5i packet_duplicate_check_elapsed=12i packet_conversion_elapsed=17i unprocessed_packet_conversion_elapsed=0i transaction_processing_elapsed=6931i cost_tracker_update_elapsed=7i cost_tracker_clone_elapsed=0i cost_tracker_check_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.373189400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_db_store_timings hash_accounts=231i store_accounts=1748i update_index=22i handle_reclaims=1i append_accounts=1215i find_storage=230i num_accounts=24i total_data=484116i read_only_accounts_cache_entries=0i read_only_accounts_cache_data_size=0i read_only_accounts_cache_hits=0i read_only_accounts_cache_misses=0i calc_stored_meta_us=22i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.373197400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_db_store_timings2 recycle_store_count=0i current_recycle_store_count=0i current_recycle_store_bytes=0i create_store_count=3i store_get_slot_store=1i store_find_existing=4i dropped_stores=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.373202300Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m poh_record: max_tick_height 384 reached, clearing working_bank 5
+[0m[38;5;8m[[0m2021-11-11T18:05:59.373240500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: leader-slot-start-to-cleared-elapsed-ms slot=5i elapsed=409i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.373327100Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m bank frozen: 5
+[0m[38;5;8m[[0m2021-11-11T18:05:59.373328000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-slot-stats slot=5i fetch_entries_time=0i fetch_entries_fail_time=0i entry_poh_verification_time=0i entry_transaction_verification_time=0i replay_time=0i replay_total_elapsed=409124i total_entries=0i total_shreds=0i check_us=0i load_us=0i execute_us=0i store_us=0i update_stakes_cache_us=0i total_batches_len=0i num_execute_batches=0i serialize_us=0i create_vm_us=0i execute_inner_us=0i deserialize_us=0i changed_account_count=0i total_account_count=0i total_data_size=0i data_size_changed=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.373366400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: per_program_timings slot=5i pubkey="all" execute_us=0i accumulated_units=0i count=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.373412300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: load_to_collect_rent_eagerly_scan_elapsed total_elapsed=4i latest_slot_elapsed=0i read_lock_elapsed=0i load_account_elapsed=0i iterator_elapsed=0i num_keys_iterated=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.373419000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: collect_rent_eagerly accounts=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.373481900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: shred_insert_is_full total_time_ms=412i slot=5i last_index=64i num_repaired=0i num_recovered=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.374310000Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m bank frozen: 5 hash: 2hacj47bjbeGCCUuHH4d9QMypum365XzYEeoB2n987sS accounts_delta: 23o2rmbrcgTRVmcggNGMwXh8jxCkgVR4h2gY1MwuZepQ signature_count: 2 last_blockhash: 9a9g6y7Jxkafh38JmyX8ibRiiqJ3BjrYMT8QRDe7uFDH capitalization: 503000502276896414
+[0m[38;5;8m[[0m2021-11-11T18:05:59.374326900Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m accounts hash slot: 5 stats: BankHashStats { num_updated_accounts: 8, num_removed_accounts: 0, num_lamports_stored: 1001001101590760, total_data_len: 161372, num_executable_accounts: 0 }
+[0m[38;5;8m[[0m2021-11-11T18:05:59.374368800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_cache_size num_roots=0i num_slots=0i total_unique_writes_size=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.374368500Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 5,
+            root: 0,
+            frozen_hash: Some(2hacj47bjbeGCCUuHH4d9QMypum365XzYEeoB2n987sS),
+            update: Frozen
+[0m[38;5;8m[[0m2021-11-11T18:05:59.374404100Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: None,
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:05:59.374504700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-observed slot=4i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.374535000Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m 5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm slot_weight: 5 0 0 4
+[0m[38;5;8m[[0m2021-11-11T18:05:59.374537600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: compute_bank_stats-best_slot computed_slot=5i overall_best_slot=5i overall_best_hash="2hacj47bjbeGCCUuHH4d9QMypum365XzYEeoB2n987sS" elapsed=7i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.374569400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank_weight slot=5i weight="0"
+[0m[38;5;8m[[0m2021-11-11T18:05:59.374562900Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m validator fork confirmed 4 822ms
+[0m[38;5;8m[[0m2021-11-11T18:05:59.374614500Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 4,
+            root: 0,
+            frozen_hash: Some(6KBV1Rh73XjknWohNN3dryh6wAMiBGHJMWnKz5deWp7Y),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:05:59.374618700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: validator-confirmation duration_ms=822i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.374639100Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: true,
+            cluster_duplicate_confirmed_hash: Some(6KBV1Rh73XjknWohNN3dryh6wAMiBGHJMWnKz5deWp7Y),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:05:59.374668900Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (4, 6KBV1Rh73XjknWohNN3dryh6wAMiBGHJMWnKz5deWp7Y) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:05:59.374680800Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m voting: 5 0
+[0m[38;5;8m[[0m2021-11-11T18:05:59.374708000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-vote latest=5i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.374934800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-process-shreds-stats slot=5i shredding_time=10947i receive_time=387149i num_data_shreds=65i slot_broadcast_time=407894i get_leader_schedule_time=18i serialize_shreds_time=132i gen_data_time=10428i gen_coding_time=3034i sign_coding_time=1971i coding_send_time=3034i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.374949200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-transmit-shreds-stats slot=5i end_to_end_elapsed=407895i transmit_elapsed=773i send_mmsg_elapsed=84i get_peers_elapsed=0i num_shreds=192i shred_select=601i total_packets=0i dropped_packets=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.375165300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-insert-shreds-stats slot=5i end_to_end_elapsed=408128i insert_shreds_elapsed=19235i num_shreds=192i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.376612700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: block-commitment-cache aggregate-commitment-ms=0i highest-confirmed-root=0i highest-confirmed-slot=4i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.376646500Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m vote bank: Some((5, SameFork)) reset bank: 5
+[0m[38;5;8m[[0m2021-11-11T18:05:59.376683400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: blocks_produced num_blocks_on_fork=5i num_dropped_blocks_on_fork=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.376704000Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m reset poh from: 9a9g6y7Jxkafh38JmyX8ibRiiqJ3BjrYMT8QRDe7uFDH,384,5 to: 9a9g6y7Jxkafh38JmyX8ibRiiqJ3BjrYMT8QRDe7uFDH,5
+[0m[38;5;8m[[0m2021-11-11T18:05:59.376714400Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267 reset PoH to tick 384 (within slot 5). My next leader slot is 6
+[0m[38;5;8m[[0m2021-11-11T18:05:59.376743000Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m new fork:6 parent:5 (leader) root:0
+[0m[38;5;8m[[0m2021-11-11T18:05:59.376749400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-new_leader slot=6i leader="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267"
+[0m[38;5;8m[[0m2021-11-11T18:05:59.376757300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-my_leader_slot slot=6i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.376806400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-new_from_parent-heights slot_height=6i block_height=6i parent_slot_height=5i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.377114100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp get_timestamp_estimate_us=4i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.377123800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp-correction slot=6i from_genesis=1636653957i corrected=1636653958i ancestor_timestamp=1636653958i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.382380800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot_elapsed average_elapsed_ms=412i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.382394400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot slot=5i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.382494100Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 5,
+            root: 0,
+            frozen_hash: Some(2hacj47bjbeGCCUuHH4d9QMypum365XzYEeoB2n987sS),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:05:59.382524400Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: Some(2hacj47bjbeGCCUuHH4d9QMypum365XzYEeoB2n987sS),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:05:59.382529800Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (5, 2hacj47bjbeGCCUuHH4d9QMypum365XzYEeoB2n987sS) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:05:59.407378600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cost_tracker_stats bank_slot=5i block_cost=47224i transaction_count=2i number_of_accounts=2i costliest_account="5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm" costliest_account_cost=47224i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.409722600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: banking_stage-loop-stats id=3i process_packets_count=0i new_tx_count=0i dropped_packet_batches_count=0i dropped_packets_count=0i dropped_duplicated_packets_count=0i newly_buffered_packets_count=0i current_buffered_packet_batches_count=0i current_buffered_packets_count=0i rebuffered_packets_count=0i consumed_buffered_packets_count=0i cost_tracker_check_count=0i cost_forced_retry_transactions_count=0i consume_buffered_packets_elapsed=0i process_packets_elapsed=0i handle_retryable_packets_elapsed=0i filter_pending_packets_elapsed=0i packet_duplicate_check_elapsed=0i packet_conversion_elapsed=0i unprocessed_packet_conversion_elapsed=0i transaction_processing_elapsed=0i cost_tracker_update_elapsed=0i cost_tracker_clone_elapsed=0i cost_tracker_check_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.409846500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: banking_stage-loop-stats id=2i process_packets_count=0i new_tx_count=0i dropped_packet_batches_count=0i dropped_packets_count=0i dropped_duplicated_packets_count=0i newly_buffered_packets_count=0i current_buffered_packet_batches_count=0i current_buffered_packets_count=0i rebuffered_packets_count=0i consumed_buffered_packets_count=0i cost_tracker_check_count=0i cost_forced_retry_transactions_count=0i consume_buffered_packets_elapsed=0i process_packets_elapsed=0i handle_retryable_packets_elapsed=0i filter_pending_packets_elapsed=0i packet_duplicate_check_elapsed=0i packet_conversion_elapsed=0i unprocessed_packet_conversion_elapsed=0i transaction_processing_elapsed=0i cost_tracker_update_elapsed=0i cost_tracker_clone_elapsed=0i cost_tracker_check_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.411037100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: banking_stage-loop-stats id=0i process_packets_count=3i new_tx_count=3i dropped_packet_batches_count=0i dropped_packets_count=0i dropped_duplicated_packets_count=0i newly_buffered_packets_count=0i current_buffered_packet_batches_count=0i current_buffered_packets_count=0i rebuffered_packets_count=0i consumed_buffered_packets_count=0i cost_tracker_check_count=3i cost_forced_retry_transactions_count=0i consume_buffered_packets_elapsed=0i process_packets_elapsed=513i handle_retryable_packets_elapsed=0i filter_pending_packets_elapsed=15i packet_duplicate_check_elapsed=0i packet_conversion_elapsed=43i unprocessed_packet_conversion_elapsed=0i transaction_processing_elapsed=180i cost_tracker_update_elapsed=7i cost_tracker_clone_elapsed=0i cost_tracker_check_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.505911400Z [0m[32mINFO [0m solana_core::window_service[0m[38;5;8m][0m num addresses: 0, top packets by source: []
+[0m[38;5;8m[[0m2021-11-11T18:05:59.505916300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: receive_window_stats num_packets=0i num_shreds=0i num_repairs=0i elapsed_micros=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.785902400Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m poh_record: max_tick_height 448 reached, clearing working_bank 6
+[0m[38;5;8m[[0m2021-11-11T18:05:59.785986500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: leader-slot-start-to-cleared-elapsed-ms slot=6i elapsed=408i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.786177500Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m bank frozen: 6
+[0m[38;5;8m[[0m2021-11-11T18:05:59.786189200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-slot-stats slot=6i fetch_entries_time=0i fetch_entries_fail_time=0i entry_poh_verification_time=0i entry_transaction_verification_time=0i replay_time=0i replay_total_elapsed=408933i total_entries=0i total_shreds=0i check_us=0i load_us=0i execute_us=0i store_us=0i update_stakes_cache_us=0i total_batches_len=0i num_execute_batches=0i serialize_us=0i create_vm_us=0i execute_inner_us=0i deserialize_us=0i changed_account_count=0i total_account_count=0i total_data_size=0i data_size_changed=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.786206500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: per_program_timings slot=6i pubkey="all" execute_us=0i accumulated_units=0i count=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.786272600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: load_to_collect_rent_eagerly_scan_elapsed total_elapsed=7i latest_slot_elapsed=0i read_lock_elapsed=0i load_account_elapsed=0i iterator_elapsed=0i num_keys_iterated=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.786282300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: collect_rent_eagerly accounts=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.786346900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: shred_insert_is_full total_time_ms=413i slot=6i last_index=64i num_repaired=0i num_recovered=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.787221400Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m bank frozen: 6 hash: 7nRv8fYvreqixWdCEfchWGBWZxoR2nZnDHCcFBhU2iXi accounts_delta: 7yULMS9ccRisk34jyW7JG2N1mwymuefuExQky8b6ATa signature_count: 2 last_blockhash: 98tHbxDiBS8yjE41zvUaxAkgYErPkCRhYiu2h9u2Qrku capitalization: 503000502276891414
+[0m[38;5;8m[[0m2021-11-11T18:05:59.787249500Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m accounts hash slot: 6 stats: BankHashStats { num_updated_accounts: 8, num_removed_accounts: 0, num_lamports_stored: 1001001101580760, total_data_len: 161372, num_executable_accounts: 0 }
+[0m[38;5;8m[[0m2021-11-11T18:05:59.787289400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_cache_size num_roots=0i num_slots=0i total_unique_writes_size=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.787287700Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 6,
+            root: 0,
+            frozen_hash: Some(7nRv8fYvreqixWdCEfchWGBWZxoR2nZnDHCcFBhU2iXi),
+            update: Frozen
+[0m[38;5;8m[[0m2021-11-11T18:05:59.787328500Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: None,
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:05:59.787456100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-observed slot=5i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.787492900Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m 5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm slot_weight: 6 0 0 5
+[0m[38;5;8m[[0m2021-11-11T18:05:59.787496600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: compute_bank_stats-best_slot computed_slot=6i overall_best_slot=6i overall_best_hash="7nRv8fYvreqixWdCEfchWGBWZxoR2nZnDHCcFBhU2iXi" elapsed=10i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.787543900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank_weight slot=6i weight="0"
+[0m[38;5;8m[[0m2021-11-11T18:05:59.787523300Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m validator fork confirmed 5 823ms
+[0m[38;5;8m[[0m2021-11-11T18:05:59.787588200Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 5,
+            root: 0,
+            frozen_hash: Some(2hacj47bjbeGCCUuHH4d9QMypum365XzYEeoB2n987sS),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:05:59.787591800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: validator-confirmation duration_ms=823i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.787613500Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: true,
+            cluster_duplicate_confirmed_hash: Some(2hacj47bjbeGCCUuHH4d9QMypum365XzYEeoB2n987sS),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:05:59.787630300Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (5, 2hacj47bjbeGCCUuHH4d9QMypum365XzYEeoB2n987sS) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:05:59.787646200Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m voting: 6 0
+[0m[38;5;8m[[0m2021-11-11T18:05:59.787679400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-vote latest=6i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.787782800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-transmit-shreds-stats slot=6i end_to_end_elapsed=407998i transmit_elapsed=799i send_mmsg_elapsed=75i get_peers_elapsed=0i num_shreds=192i shred_select=640i total_packets=0i dropped_packets=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.787820200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-process-shreds-stats slot=6i shredding_time=11003i receive_time=387115i num_data_shreds=65i slot_broadcast_time=407997i get_leader_schedule_time=0i serialize_shreds_time=61i gen_data_time=10541i gen_coding_time=3091i sign_coding_time=2034i coding_send_time=3091i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.788089200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-insert-shreds-stats slot=6i end_to_end_elapsed=408327i insert_shreds_elapsed=19295i num_shreds=192i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.789464100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: block-commitment-cache aggregate-commitment-ms=0i highest-confirmed-root=0i highest-confirmed-slot=5i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.789494100Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m vote bank: Some((6, SameFork)) reset bank: 6
+[0m[38;5;8m[[0m2021-11-11T18:05:59.789522700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: blocks_produced num_blocks_on_fork=6i num_dropped_blocks_on_fork=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.789536100Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m reset poh from: 98tHbxDiBS8yjE41zvUaxAkgYErPkCRhYiu2h9u2Qrku,448,6 to: 98tHbxDiBS8yjE41zvUaxAkgYErPkCRhYiu2h9u2Qrku,6
+[0m[38;5;8m[[0m2021-11-11T18:05:59.789546600Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267 reset PoH to tick 448 (within slot 6). My next leader slot is 7
+[0m[38;5;8m[[0m2021-11-11T18:05:59.789572100Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m new fork:7 parent:6 (leader) root:0
+[0m[38;5;8m[[0m2021-11-11T18:05:59.789575200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-new_leader slot=7i leader="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267"
+[0m[38;5;8m[[0m2021-11-11T18:05:59.789581500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-my_leader_slot slot=7i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.789623700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-new_from_parent-heights slot_height=7i block_height=7i parent_slot_height=6i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.789812600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp get_timestamp_estimate_us=2i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.789821300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp-correction slot=7i from_genesis=1636653957i corrected=1636653959i ancestor_timestamp=1636653958i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.795054100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: poh_recorder slot=7i tick_lock_contention=882i record_us=4i flush_cache_no_tick_us=0i flush_cache_tick_us=5518i prepare_send_us=0i send_us=24i ticks_from_record=0i total_sleep_us=7380i tick_overhead=0i record_lock_contention=0i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.795358000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot_elapsed average_elapsed_ms=412i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.795369500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot slot=6i
+[0m[38;5;8m[[0m2021-11-11T18:05:59.795491700Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 6,
+            root: 0,
+            frozen_hash: Some(7nRv8fYvreqixWdCEfchWGBWZxoR2nZnDHCcFBhU2iXi),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:05:59.795508400Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: Some(7nRv8fYvreqixWdCEfchWGBWZxoR2nZnDHCcFBhU2iXi),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:05:59.795515900Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (6, 7nRv8fYvreqixWdCEfchWGBWZxoR2nZnDHCcFBhU2iXi) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:05:59.807747800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cost_tracker_stats bank_slot=6i block_cost=47224i transaction_count=2i number_of_accounts=2i costliest_account="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267" costliest_account_cost=47224i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.198202200Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m poh_record: max_tick_height 512 reached, clearing working_bank 7
+[0m[38;5;8m[[0m2021-11-11T18:06:00.198285400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: leader-slot-start-to-cleared-elapsed-ms slot=7i elapsed=408i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.198461400Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m bank frozen: 7
+[0m[38;5;8m[[0m2021-11-11T18:06:00.198466200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-slot-stats slot=7i fetch_entries_time=0i fetch_entries_fail_time=0i entry_poh_verification_time=0i entry_transaction_verification_time=0i replay_time=0i replay_total_elapsed=408575i total_entries=0i total_shreds=0i check_us=0i load_us=0i execute_us=0i store_us=0i update_stakes_cache_us=0i total_batches_len=0i num_execute_batches=0i serialize_us=0i create_vm_us=0i execute_inner_us=0i deserialize_us=0i changed_account_count=0i total_account_count=0i total_data_size=0i data_size_changed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.198477800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: per_program_timings slot=7i pubkey="all" execute_us=0i accumulated_units=0i count=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.198558700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: load_to_collect_rent_eagerly_scan_elapsed total_elapsed=6i latest_slot_elapsed=0i read_lock_elapsed=0i load_account_elapsed=0i iterator_elapsed=0i num_keys_iterated=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.198569400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: collect_rent_eagerly accounts=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.198642200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: shred_insert_is_full total_time_ms=412i slot=7i last_index=64i num_repaired=0i num_recovered=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.199530500Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m bank frozen: 7 hash: E2Nt7DY4CEkMLaFxFG5wVRG4CeeuKzths185VhFEB7xR accounts_delta: FxiiuFmb8RHXrUyTDjm5G9fKEkJsRsRDgCmG1sMKskzp signature_count: 2 last_blockhash: 2YmYBfwL8yStPQA8TmHRrZbqzgkphKmH5G74w7XWPTaK capitalization: 503000502276886414
+[0m[38;5;8m[[0m2021-11-11T18:06:00.199547000Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m accounts hash slot: 7 stats: BankHashStats { num_updated_accounts: 8, num_removed_accounts: 0, num_lamports_stored: 1001001101570760, total_data_len: 161372, num_executable_accounts: 0 }
+[0m[38;5;8m[[0m2021-11-11T18:06:00.199658700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_cache_size num_roots=0i num_slots=0i total_unique_writes_size=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.199658300Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 7,
+            root: 0,
+            frozen_hash: Some(E2Nt7DY4CEkMLaFxFG5wVRG4CeeuKzths185VhFEB7xR),
+            update: Frozen
+[0m[38;5;8m[[0m2021-11-11T18:06:00.199696400Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: None,
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:00.199832200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-transmit-shreds-stats slot=7i end_to_end_elapsed=407380i transmit_elapsed=856i send_mmsg_elapsed=105i get_peers_elapsed=0i num_shreds=192i shred_select=656i total_packets=0i dropped_packets=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.199840900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-observed slot=6i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.199873200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-process-shreds-stats slot=7i shredding_time=11322i receive_time=385765i num_data_shreds=65i slot_broadcast_time=407381i get_leader_schedule_time=0i serialize_shreds_time=65i gen_data_time=10794i gen_coding_time=2251i sign_coding_time=2892i coding_send_time=2251i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.199912300Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m 5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm slot_weight: 7 0 0 6
+[0m[38;5;8m[[0m2021-11-11T18:06:00.199944700Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m validator fork confirmed 6 822ms
+[0m[38;5;8m[[0m2021-11-11T18:06:00.199948600Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 6,
+            root: 0,
+            frozen_hash: Some(7nRv8fYvreqixWdCEfchWGBWZxoR2nZnDHCcFBhU2iXi),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:06:00.199977300Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: true,
+            cluster_duplicate_confirmed_hash: Some(7nRv8fYvreqixWdCEfchWGBWZxoR2nZnDHCcFBhU2iXi),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:00.199981800Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (6, 7nRv8fYvreqixWdCEfchWGBWZxoR2nZnDHCcFBhU2iXi) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:06:00.199993200Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m voting: 7 0
+[0m[38;5;8m[[0m2021-11-11T18:06:00.199993600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: compute_bank_stats-best_slot computed_slot=7i overall_best_slot=7i overall_best_hash="E2Nt7DY4CEkMLaFxFG5wVRG4CeeuKzths185VhFEB7xR" elapsed=9i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.200002400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank_weight slot=7i weight="0"
+[0m[38;5;8m[[0m2021-11-11T18:06:00.200004600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: validator-confirmation duration_ms=822i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.200006300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-vote latest=7i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.200104000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-insert-shreds-stats slot=7i end_to_end_elapsed=407680i insert_shreds_elapsed=20835i num_shreds=192i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.201822500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: block-commitment-cache aggregate-commitment-ms=0i highest-confirmed-root=0i highest-confirmed-slot=6i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.201844500Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m vote bank: Some((7, SameFork)) reset bank: 7
+[0m[38;5;8m[[0m2021-11-11T18:06:00.201874200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: blocks_produced num_blocks_on_fork=7i num_dropped_blocks_on_fork=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.201883200Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m reset poh from: 2YmYBfwL8yStPQA8TmHRrZbqzgkphKmH5G74w7XWPTaK,512,7 to: 2YmYBfwL8yStPQA8TmHRrZbqzgkphKmH5G74w7XWPTaK,7
+[0m[38;5;8m[[0m2021-11-11T18:06:00.201893100Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267 reset PoH to tick 512 (within slot 7). My next leader slot is 8
+[0m[38;5;8m[[0m2021-11-11T18:06:00.201919700Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m new fork:8 parent:7 (leader) root:0
+[0m[38;5;8m[[0m2021-11-11T18:06:00.201922500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-new_leader slot=8i leader="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267"
+[0m[38;5;8m[[0m2021-11-11T18:06:00.201929000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-my_leader_slot slot=8i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.201991900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-new_from_parent-heights slot_height=8i block_height=8i parent_slot_height=7i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.202198300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp get_timestamp_estimate_us=4i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.202207200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp-correction slot=8i from_genesis=1636653958i corrected=1636653959i ancestor_timestamp=1636653959i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.208163800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cost_tracker_stats bank_slot=7i block_cost=47224i transaction_count=2i number_of_accounts=2i costliest_account="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267" costliest_account_cost=47224i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.213157300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot_elapsed average_elapsed_ms=417i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.213176400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot slot=7i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.214203800Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 7,
+            root: 0,
+            frozen_hash: Some(E2Nt7DY4CEkMLaFxFG5wVRG4CeeuKzths185VhFEB7xR),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:06:00.214217900Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: Some(E2Nt7DY4CEkMLaFxFG5wVRG4CeeuKzths185VhFEB7xR),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:00.214223200Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (7, E2Nt7DY4CEkMLaFxFG5wVRG4CeeuKzths185VhFEB7xR) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:06:00.304101100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: sigverify_stage-total_verify_time recv_batches_us_90pct=0i recv_batches_us_min=0i recv_batches_us_max=0i recv_batches_us_mean=0i verify_batches_pp_us_90pct=0i verify_batches_pp_us_min=0i verify_batches_pp_us_max=0i verify_batches_pp_us_mean=0i batches_90pct=0i batches_min=0i batches_max=0i batches_mean=0i packets_90pct=0i packets_min=0i packets_max=0i packets_mean=0i total_batches=0i total_packets=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.306299500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: recv-window-insert-shreds num_shreds=0i total_elapsed=0i insert_lock_elapsed=0i insert_shreds_elapsed=0i shred_recovery_elapsed=0i chaining_elapsed=0i commit_working_sets_elapsed=0i write_batch_elapsed=0i num_inserted=0i num_repair=0i num_recovered=0i num_recovered_inserted=0i num_recovered_failed_sig=0i num_recovered_failed_invalid=0i num_recovered_exists=0i num_recovered_blockstore_error=0i num_data_shreds_exists=0i num_data_shreds_invalid=0i num_data_shreds_blockstore_error=0i num_coding_shreds_exists=0i num_coding_shreds_invalid=0i num_coding_shreds_invalid_erasure_config=0i num_coding_shreds_inserted=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.306313700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: recv-window-insert-shreds run_insert_count=15i num_shreds_received=0i shred_receiver_elapsed_us=0i prune_shreds_elapsed_us=0i num_shreds_pruned_invalid_repair=0i num_errors=15i num_errors_blockstore=0i num_errors_other=0i num_errors_try_crossbeam_send=0i num_errors_cross_beam_recv_timeout=15i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.306453900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: sigverify_stage-total_verify_time recv_batches_us_90pct=0i recv_batches_us_min=0i recv_batches_us_max=0i recv_batches_us_mean=0i verify_batches_pp_us_90pct=0i verify_batches_pp_us_min=0i verify_batches_pp_us_max=0i verify_batches_pp_us_mean=0i batches_90pct=0i batches_min=0i batches_max=0i batches_mean=0i packets_90pct=0i packets_min=0i packets_max=0i packets_mean=0i total_batches=0i total_packets=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.308347300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cost-update-service-stats total_elapsed_us=1001000i update_cost_model_count=0i update_cost_model_elapsed=110i persist_cost_table_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.309233300Z [0m[32mINFO [0m solana_core::repair_service[0m[38;5;8m][0m repair_stats: []
+[0m[38;5;8m[[0m2021-11-11T18:06:00.309267500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: serve_repair-repair-timing set-root-elapsed=17i get-votes-elapsed=46i add-votes-elapsed=260i get-best-orphans-elapsed=823i get-best-shreds-elapsed=644i send-repairs-elapsed=112i build-repairs-batch-elapsed=112i batch-send-repairs-elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.316788300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-loop-voting-stats vote_push_us=0i vote_send_us=0i generate_vote_us=186i update_commitment_cache_us=56i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.316802900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-loop-timing-stats total_elapsed_us=1001000i collect_frozen_banks_elapsed=294i compute_bank_stats_elapsed=1346i select_vote_and_reset_forks_elapsed=189i start_leader_elapsed=999i reset_bank_elapsed=186i voting_elapsed=5660i select_forks_elapsed=161i compute_slot_stats_elapsed=282i generate_new_bank_forks_elapsed=5125i replay_active_banks_elapsed=9307i process_gossip_duplicate_confirmed_slots_elapsed=215i process_unfrozen_gossip_verified_vote_hashes_elapsed=58i wait_receive_elapsed=968157i heaviest_fork_failures_elapsed=37i bank_count=3i process_duplicate_slots_elapsed=3i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.323144200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cluster_info-num_nodes live_count=0i broadcast_count=1i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.398848300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cluster_slots_service-timing lowest_slot_elapsed=1024i process_cluster_slots_updates_elapsed=764i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.411053500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: banking_stage-loop-stats id=3i process_packets_count=0i new_tx_count=0i dropped_packet_batches_count=0i dropped_packets_count=0i dropped_duplicated_packets_count=0i newly_buffered_packets_count=0i current_buffered_packet_batches_count=0i current_buffered_packets_count=0i rebuffered_packets_count=0i consumed_buffered_packets_count=0i cost_tracker_check_count=0i cost_forced_retry_transactions_count=0i consume_buffered_packets_elapsed=0i process_packets_elapsed=0i handle_retryable_packets_elapsed=0i filter_pending_packets_elapsed=0i packet_duplicate_check_elapsed=0i packet_conversion_elapsed=0i unprocessed_packet_conversion_elapsed=0i transaction_processing_elapsed=0i cost_tracker_update_elapsed=0i cost_tracker_clone_elapsed=0i cost_tracker_check_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.411108500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: banking_stage-loop-stats id=2i process_packets_count=0i new_tx_count=0i dropped_packet_batches_count=0i dropped_packets_count=0i dropped_duplicated_packets_count=0i newly_buffered_packets_count=0i current_buffered_packet_batches_count=0i current_buffered_packets_count=0i rebuffered_packets_count=0i consumed_buffered_packets_count=0i cost_tracker_check_count=0i cost_forced_retry_transactions_count=0i consume_buffered_packets_elapsed=0i process_packets_elapsed=0i handle_retryable_packets_elapsed=0i filter_pending_packets_elapsed=0i packet_duplicate_check_elapsed=0i packet_conversion_elapsed=0i unprocessed_packet_conversion_elapsed=0i transaction_processing_elapsed=0i cost_tracker_update_elapsed=0i cost_tracker_clone_elapsed=0i cost_tracker_check_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.412918900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: banking_stage-loop-stats id=0i process_packets_count=2i new_tx_count=2i dropped_packet_batches_count=0i dropped_packets_count=0i dropped_duplicated_packets_count=0i newly_buffered_packets_count=0i current_buffered_packet_batches_count=0i current_buffered_packets_count=0i rebuffered_packets_count=0i consumed_buffered_packets_count=0i cost_tracker_check_count=2i cost_forced_retry_transactions_count=0i consume_buffered_packets_elapsed=0i process_packets_elapsed=410i handle_retryable_packets_elapsed=0i filter_pending_packets_elapsed=8i packet_duplicate_check_elapsed=0i packet_conversion_elapsed=34i unprocessed_packet_conversion_elapsed=0i transaction_processing_elapsed=189i cost_tracker_update_elapsed=26i cost_tracker_clone_elapsed=0i cost_tracker_check_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.414189400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: banking_stage-loop-stats id=1i process_packets_count=3i new_tx_count=1i dropped_packet_batches_count=0i dropped_packets_count=0i dropped_duplicated_packets_count=0i newly_buffered_packets_count=2i current_buffered_packet_batches_count=1i current_buffered_packets_count=1i rebuffered_packets_count=0i consumed_buffered_packets_count=2i cost_tracker_check_count=3i cost_forced_retry_transactions_count=0i consume_buffered_packets_elapsed=6983i process_packets_elapsed=5287i handle_retryable_packets_elapsed=0i filter_pending_packets_elapsed=7i packet_duplicate_check_elapsed=298i packet_conversion_elapsed=28i unprocessed_packet_conversion_elapsed=0i transaction_processing_elapsed=11753i cost_tracker_update_elapsed=12i cost_tracker_clone_elapsed=0i cost_tracker_check_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.611033900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_db_store_timings hash_accounts=239i store_accounts=1557i update_index=22i handle_reclaims=2i append_accounts=1042i find_storage=183i num_accounts=24i total_data=484116i read_only_accounts_cache_entries=0i read_only_accounts_cache_data_size=0i read_only_accounts_cache_hits=0i read_only_accounts_cache_misses=0i calc_stored_meta_us=22i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.611045100Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m poh_record: max_tick_height 576 reached, clearing working_bank 8
+[0m[38;5;8m[[0m2021-11-11T18:06:00.611052100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_db_store_timings2 recycle_store_count=0i current_recycle_store_count=0i current_recycle_store_bytes=0i create_store_count=3i store_get_slot_store=0i store_find_existing=3i dropped_stores=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.611146800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: leader-slot-start-to-cleared-elapsed-ms slot=8i elapsed=408i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.611219000Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m bank frozen: 8
+[0m[38;5;8m[[0m2021-11-11T18:06:00.611221700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-slot-stats slot=8i fetch_entries_time=0i fetch_entries_fail_time=0i entry_poh_verification_time=0i entry_transaction_verification_time=0i replay_time=0i replay_total_elapsed=408929i total_entries=0i total_shreds=0i check_us=0i load_us=0i execute_us=0i store_us=0i update_stakes_cache_us=0i total_batches_len=0i num_execute_batches=0i serialize_us=0i create_vm_us=0i execute_inner_us=0i deserialize_us=0i changed_account_count=0i total_account_count=0i total_data_size=0i data_size_changed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.611232200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: per_program_timings slot=8i pubkey="all" execute_us=0i accumulated_units=0i count=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.611355000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: load_to_collect_rent_eagerly_scan_elapsed total_elapsed=7i latest_slot_elapsed=0i read_lock_elapsed=0i load_account_elapsed=0i iterator_elapsed=0i num_keys_iterated=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.611366200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: collect_rent_eagerly accounts=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.611493800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: shred_insert_is_full total_time_ms=413i slot=8i last_index=63i num_repaired=0i num_recovered=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.612547700Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m bank frozen: 8 hash: 7PPV69skN9o2yRfLgPqiCBcV7ZM1jZWco9Udq1wMZT4L accounts_delta: DFqL6XyLwChmtmb5gfVRX1tBMaXkCeZoHm64JLNhivvm signature_count: 2 last_blockhash: 6k2hWoCxkHPYEDupbWwq4mzQGjfttK3xRCMkNa6XRZzf capitalization: 503000502276881414
+[0m[38;5;8m[[0m2021-11-11T18:06:00.612567900Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m accounts hash slot: 8 stats: BankHashStats { num_updated_accounts: 8, num_removed_accounts: 0, num_lamports_stored: 1001001101560760, total_data_len: 161372, num_executable_accounts: 0 }
+[0m[38;5;8m[[0m2021-11-11T18:06:00.612638200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_cache_size num_roots=0i num_slots=0i total_unique_writes_size=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.612637800Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 8,
+            root: 0,
+            frozen_hash: Some(7PPV69skN9o2yRfLgPqiCBcV7ZM1jZWco9Udq1wMZT4L),
+            update: Frozen
+[0m[38;5;8m[[0m2021-11-11T18:06:00.612654400Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: None,
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:00.612827200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-observed slot=7i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.612858000Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m 5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm slot_weight: 8 0 0 7
+[0m[38;5;8m[[0m2021-11-11T18:06:00.612865200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: compute_bank_stats-best_slot computed_slot=8i overall_best_slot=8i overall_best_hash="7PPV69skN9o2yRfLgPqiCBcV7ZM1jZWco9Udq1wMZT4L" elapsed=8i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.612898300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank_weight slot=8i weight="0"
+[0m[38;5;8m[[0m2021-11-11T18:06:00.612868600Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m validator fork confirmed 7 823ms
+[0m[38;5;8m[[0m2021-11-11T18:06:00.612995900Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 7,
+            root: 0,
+            frozen_hash: Some(E2Nt7DY4CEkMLaFxFG5wVRG4CeeuKzths185VhFEB7xR),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:06:00.613004600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: validator-confirmation duration_ms=823i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.613005800Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: true,
+            cluster_duplicate_confirmed_hash: Some(E2Nt7DY4CEkMLaFxFG5wVRG4CeeuKzths185VhFEB7xR),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:00.613154200Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (7, E2Nt7DY4CEkMLaFxFG5wVRG4CeeuKzths185VhFEB7xR) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:06:00.613169300Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m voting: 8 0
+[0m[38;5;8m[[0m2021-11-11T18:06:00.613275100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-vote latest=8i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.613644600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-process-shreds-stats slot=8i shredding_time=10860i receive_time=389727i num_data_shreds=64i slot_broadcast_time=408862i get_leader_schedule_time=19i serialize_shreds_time=84i gen_data_time=10340i gen_coding_time=2262i sign_coding_time=1415i coding_send_time=2262i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.613654300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-transmit-shreds-stats slot=8i end_to_end_elapsed=408866i transmit_elapsed=780i send_mmsg_elapsed=62i get_peers_elapsed=0i num_shreds=128i shred_select=640i total_packets=0i dropped_packets=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.613891200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-insert-shreds-stats slot=8i end_to_end_elapsed=409143i insert_shreds_elapsed=18760i num_shreds=128i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.615405900Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m vote bank: Some((8, SameFork)) reset bank: 8
+[0m[38;5;8m[[0m2021-11-11T18:06:00.615453100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: block-commitment-cache aggregate-commitment-ms=0i highest-confirmed-root=0i highest-confirmed-slot=7i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.615468100Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m reset poh from: 6k2hWoCxkHPYEDupbWwq4mzQGjfttK3xRCMkNa6XRZzf,576,8 to: 6k2hWoCxkHPYEDupbWwq4mzQGjfttK3xRCMkNa6XRZzf,8
+[0m[38;5;8m[[0m2021-11-11T18:06:00.615478500Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267 reset PoH to tick 576 (within slot 8). My next leader slot is 9
+[0m[38;5;8m[[0m2021-11-11T18:06:00.615489700Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m new fork:9 parent:8 (leader) root:0
+[0m[38;5;8m[[0m2021-11-11T18:06:00.615498500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: blocks_produced num_blocks_on_fork=8i num_dropped_blocks_on_fork=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.615505100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-new_leader slot=9i leader="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267"
+[0m[38;5;8m[[0m2021-11-11T18:06:00.615511300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-my_leader_slot slot=9i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.615513100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-new_from_parent-heights slot_height=9i block_height=9i parent_slot_height=8i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.615707100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp get_timestamp_estimate_us=2i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.615721700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp-correction slot=9i from_genesis=1636653958i corrected=1636653960i ancestor_timestamp=1636653959i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.618031900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: sigverify_stage-total_verify_time recv_batches_us_90pct=0i recv_batches_us_min=0i recv_batches_us_max=0i recv_batches_us_mean=0i verify_batches_pp_us_90pct=862i verify_batches_pp_us_min=203i verify_batches_pp_us_max=862i verify_batches_pp_us_mean=360i batches_90pct=1i batches_min=1i batches_max=1i batches_mean=1i packets_90pct=1i packets_min=1i packets_max=1i packets_mean=1i total_batches=9i total_packets=9i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.621261300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot_elapsed average_elapsed_ms=408i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.621277700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot slot=8i
+[0m[38;5;8m[[0m2021-11-11T18:06:00.621438300Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 8,
+            root: 0,
+            frozen_hash: Some(7PPV69skN9o2yRfLgPqiCBcV7ZM1jZWco9Udq1wMZT4L),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:06:00.621451500Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: Some(7PPV69skN9o2yRfLgPqiCBcV7ZM1jZWco9Udq1wMZT4L),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:00.621456900Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (8, 7PPV69skN9o2yRfLgPqiCBcV7ZM1jZWco9Udq1wMZT4L) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:06:00.708750800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cost_tracker_stats bank_slot=8i block_cost=47224i transaction_count=2i number_of_accounts=2i costliest_account="5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm" costliest_account_cost=47224i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.025333200Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m poh_record: max_tick_height 640 reached, clearing working_bank 9
+[0m[38;5;8m[[0m2021-11-11T18:06:01.025425300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: leader-slot-start-to-cleared-elapsed-ms slot=9i elapsed=409i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.025572900Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m bank frozen: 9
+[0m[38;5;8m[[0m2021-11-11T18:06:01.025576600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-slot-stats slot=9i fetch_entries_time=0i fetch_entries_fail_time=0i entry_poh_verification_time=0i entry_transaction_verification_time=0i replay_time=0i replay_total_elapsed=409781i total_entries=0i total_shreds=0i check_us=0i load_us=0i execute_us=0i store_us=0i update_stakes_cache_us=0i total_batches_len=0i num_execute_batches=0i serialize_us=0i create_vm_us=0i execute_inner_us=0i deserialize_us=0i changed_account_count=0i total_account_count=0i total_data_size=0i data_size_changed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.025588200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: per_program_timings slot=9i pubkey="all" execute_us=0i accumulated_units=0i count=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.025668000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: load_to_collect_rent_eagerly_scan_elapsed total_elapsed=4i latest_slot_elapsed=0i read_lock_elapsed=0i load_account_elapsed=0i iterator_elapsed=0i num_keys_iterated=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.025677900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: collect_rent_eagerly accounts=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.025745500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: shred_insert_is_full total_time_ms=414i slot=9i last_index=64i num_repaired=0i num_recovered=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.026618000Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m bank frozen: 9 hash: 4WJtvvpEktay1XiKFEAqPfXpMaBViQZXT7JgS56gCGvh accounts_delta: 4ZxqnNMueLpGoo1nwuZzkuY5CM9aci9pAAKwY8TMxsri signature_count: 2 last_blockhash: FxL1CNT4bmoFNz4gtEZaA2RPQ2MDMpUKZ7PKkbxytrCu capitalization: 503000502276876414
+[0m[38;5;8m[[0m2021-11-11T18:06:01.026648800Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m accounts hash slot: 9 stats: BankHashStats { num_updated_accounts: 8, num_removed_accounts: 0, num_lamports_stored: 1001001101550760, total_data_len: 161372, num_executable_accounts: 0 }
+[0m[38;5;8m[[0m2021-11-11T18:06:01.026685500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_cache_size num_roots=0i num_slots=0i total_unique_writes_size=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.026685200Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 9,
+            root: 0,
+            frozen_hash: Some(4WJtvvpEktay1XiKFEAqPfXpMaBViQZXT7JgS56gCGvh),
+            update: Frozen
+[0m[38;5;8m[[0m2021-11-11T18:06:01.026721400Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: None,
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:01.026842900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-observed slot=8i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.026881900Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m 5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm slot_weight: 9 0 0 8
+[0m[38;5;8m[[0m2021-11-11T18:06:01.026884300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: compute_bank_stats-best_slot computed_slot=9i overall_best_slot=9i overall_best_hash="4WJtvvpEktay1XiKFEAqPfXpMaBViQZXT7JgS56gCGvh" elapsed=10i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.026910100Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m validator fork confirmed 8 824ms
+[0m[38;5;8m[[0m2021-11-11T18:06:01.026916700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank_weight slot=9i weight="0"
+[0m[38;5;8m[[0m2021-11-11T18:06:01.026940600Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 8,
+            root: 0,
+            frozen_hash: Some(7PPV69skN9o2yRfLgPqiCBcV7ZM1jZWco9Udq1wMZT4L),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:06:01.026951100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: validator-confirmation duration_ms=824i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.026974200Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: true,
+            cluster_duplicate_confirmed_hash: Some(7PPV69skN9o2yRfLgPqiCBcV7ZM1jZWco9Udq1wMZT4L),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:01.027014500Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (8, 7PPV69skN9o2yRfLgPqiCBcV7ZM1jZWco9Udq1wMZT4L) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:06:01.027040300Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m voting: 9 0
+[0m[38;5;8m[[0m2021-11-11T18:06:01.027070800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-vote latest=9i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.027239800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-transmit-shreds-stats slot=9i end_to_end_elapsed=409658i transmit_elapsed=886i send_mmsg_elapsed=147i get_peers_elapsed=0i num_shreds=192i shred_select=653i total_packets=0i dropped_packets=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.027275600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-process-shreds-stats slot=9i shredding_time=10481i receive_time=389809i num_data_shreds=65i slot_broadcast_time=409659i get_leader_schedule_time=0i serialize_shreds_time=83i gen_data_time=9916i gen_coding_time=2626i sign_coding_time=1969i coding_send_time=2626i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.027484200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-insert-shreds-stats slot=9i end_to_end_elapsed=409904i insert_shreds_elapsed=18140i num_shreds=192i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.029369700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: block-commitment-cache aggregate-commitment-ms=0i highest-confirmed-root=0i highest-confirmed-slot=8i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.029391900Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m vote bank: Some((9, SameFork)) reset bank: 9
+[0m[38;5;8m[[0m2021-11-11T18:06:01.029484300Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m reset poh from: FxL1CNT4bmoFNz4gtEZaA2RPQ2MDMpUKZ7PKkbxytrCu,640,9 to: FxL1CNT4bmoFNz4gtEZaA2RPQ2MDMpUKZ7PKkbxytrCu,9
+[0m[38;5;8m[[0m2021-11-11T18:06:01.029495400Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267 reset PoH to tick 640 (within slot 9). My next leader slot is 10
+[0m[38;5;8m[[0m2021-11-11T18:06:01.029497300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: blocks_produced num_blocks_on_fork=9i num_dropped_blocks_on_fork=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.029506800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-new_leader slot=10i leader="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267"
+[0m[38;5;8m[[0m2021-11-11T18:06:01.029508100Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m new fork:10 parent:9 (leader) root:0
+[0m[38;5;8m[[0m2021-11-11T18:06:01.029509300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-my_leader_slot slot=10i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.029566500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-new_from_parent-heights slot_height=10i block_height=10i parent_slot_height=9i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.029756400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp get_timestamp_estimate_us=2i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.029764200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp-correction slot=10i from_genesis=1636653959i corrected=1636653960i ancestor_timestamp=1636653960i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.034993500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: poh_recorder slot=10i tick_lock_contention=993i record_us=5i flush_cache_no_tick_us=0i flush_cache_tick_us=5316i prepare_send_us=0i send_us=26i ticks_from_record=0i total_sleep_us=9267i tick_overhead=0i record_lock_contention=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.035443600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot_elapsed average_elapsed_ms=414i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.035471900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot slot=9i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.035604100Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 9,
+            root: 0,
+            frozen_hash: Some(4WJtvvpEktay1XiKFEAqPfXpMaBViQZXT7JgS56gCGvh),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:06:01.035618700Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: Some(4WJtvvpEktay1XiKFEAqPfXpMaBViQZXT7JgS56gCGvh),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:01.035626000Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (9, 4WJtvvpEktay1XiKFEAqPfXpMaBViQZXT7JgS56gCGvh) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:06:01.109181200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cost_tracker_stats bank_slot=9i block_cost=47224i transaction_count=2i number_of_accounts=2i costliest_account="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267" costliest_account_cost=47224i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.309456900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cost-update-service-stats total_elapsed_us=1001000i update_cost_model_count=0i update_cost_model_elapsed=93i persist_cost_table_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.317160200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-loop-voting-stats vote_push_us=0i vote_send_us=0i generate_vote_us=409i update_commitment_cache_us=36i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.317173900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-loop-timing-stats total_elapsed_us=1001000i collect_frozen_banks_elapsed=441i compute_bank_stats_elapsed=1570i select_vote_and_reset_forks_elapsed=194i start_leader_elapsed=517i reset_bank_elapsed=209i voting_elapsed=4580i select_forks_elapsed=146i compute_slot_stats_elapsed=449i generate_new_bank_forks_elapsed=5563i replay_active_banks_elapsed=8209i process_gossip_duplicate_confirmed_slots_elapsed=125i process_unfrozen_gossip_verified_vote_hashes_elapsed=48i wait_receive_elapsed=970447i heaviest_fork_failures_elapsed=0i bank_count=2i process_duplicate_slots_elapsed=2i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.329860500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cluster_info-num_nodes live_count=0i broadcast_count=1i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.412147700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: banking_stage-loop-stats id=2i process_packets_count=0i new_tx_count=0i dropped_packet_batches_count=0i dropped_packets_count=0i dropped_duplicated_packets_count=0i newly_buffered_packets_count=0i current_buffered_packet_batches_count=0i current_buffered_packets_count=0i rebuffered_packets_count=0i consumed_buffered_packets_count=0i cost_tracker_check_count=0i cost_forced_retry_transactions_count=0i consume_buffered_packets_elapsed=0i process_packets_elapsed=0i handle_retryable_packets_elapsed=0i filter_pending_packets_elapsed=0i packet_duplicate_check_elapsed=0i packet_conversion_elapsed=0i unprocessed_packet_conversion_elapsed=0i transaction_processing_elapsed=0i cost_tracker_update_elapsed=0i cost_tracker_clone_elapsed=0i cost_tracker_check_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.412171900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: banking_stage-loop-stats id=3i process_packets_count=0i new_tx_count=0i dropped_packet_batches_count=0i dropped_packets_count=0i dropped_duplicated_packets_count=0i newly_buffered_packets_count=0i current_buffered_packet_batches_count=0i current_buffered_packets_count=0i rebuffered_packets_count=0i consumed_buffered_packets_count=0i cost_tracker_check_count=0i cost_forced_retry_transactions_count=0i consume_buffered_packets_elapsed=0i process_packets_elapsed=0i handle_retryable_packets_elapsed=0i filter_pending_packets_elapsed=0i packet_duplicate_check_elapsed=0i packet_conversion_elapsed=0i unprocessed_packet_conversion_elapsed=0i transaction_processing_elapsed=0i cost_tracker_update_elapsed=0i cost_tracker_clone_elapsed=0i cost_tracker_check_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.415333100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: banking_stage-loop-stats id=0i process_packets_count=3i new_tx_count=3i dropped_packet_batches_count=0i dropped_packets_count=0i dropped_duplicated_packets_count=0i newly_buffered_packets_count=0i current_buffered_packet_batches_count=0i current_buffered_packets_count=0i rebuffered_packets_count=0i consumed_buffered_packets_count=0i cost_tracker_check_count=3i cost_forced_retry_transactions_count=0i consume_buffered_packets_elapsed=0i process_packets_elapsed=457i handle_retryable_packets_elapsed=0i filter_pending_packets_elapsed=10i packet_duplicate_check_elapsed=0i packet_conversion_elapsed=40i unprocessed_packet_conversion_elapsed=0i transaction_processing_elapsed=213i cost_tracker_update_elapsed=8i cost_tracker_clone_elapsed=0i cost_tracker_check_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.435849800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: banking_stage-loop-stats id=1i process_packets_count=2i new_tx_count=2i dropped_packet_batches_count=0i dropped_packets_count=0i dropped_duplicated_packets_count=0i newly_buffered_packets_count=0i current_buffered_packet_batches_count=0i current_buffered_packets_count=0i rebuffered_packets_count=0i consumed_buffered_packets_count=0i cost_tracker_check_count=2i cost_forced_retry_transactions_count=0i consume_buffered_packets_elapsed=0i process_packets_elapsed=11080i handle_retryable_packets_elapsed=0i filter_pending_packets_elapsed=5i packet_duplicate_check_elapsed=0i packet_conversion_elapsed=15i unprocessed_packet_conversion_elapsed=0i transaction_processing_elapsed=10831i cost_tracker_update_elapsed=6i cost_tracker_clone_elapsed=0i cost_tracker_check_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.435867300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: pubsub_notification_entries notification_entry_processing_count=40i notification_entry_processing_time_us=1372i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.438672500Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m poh_record: max_tick_height 704 reached, clearing working_bank 10
+[0m[38;5;8m[[0m2021-11-11T18:06:01.438754400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: leader-slot-start-to-cleared-elapsed-ms slot=10i elapsed=408i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.438886500Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m bank frozen: 10
+[0m[38;5;8m[[0m2021-11-11T18:06:01.438890900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-slot-stats slot=10i fetch_entries_time=0i fetch_entries_fail_time=0i entry_poh_verification_time=0i entry_transaction_verification_time=0i replay_time=0i replay_total_elapsed=409027i total_entries=0i total_shreds=0i check_us=0i load_us=0i execute_us=0i store_us=0i update_stakes_cache_us=0i total_batches_len=0i num_execute_batches=0i serialize_us=0i create_vm_us=0i execute_inner_us=0i deserialize_us=0i changed_account_count=0i total_account_count=0i total_data_size=0i data_size_changed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.438902800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: per_program_timings slot=10i pubkey="all" execute_us=0i accumulated_units=0i count=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.438971000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: load_to_collect_rent_eagerly_scan_elapsed total_elapsed=7i latest_slot_elapsed=0i read_lock_elapsed=0i load_account_elapsed=0i iterator_elapsed=0i num_keys_iterated=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.438982900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: collect_rent_eagerly accounts=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.439066500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: shred_insert_is_full total_time_ms=413i slot=10i last_index=64i num_repaired=0i num_recovered=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.439676400Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m bank frozen: 10 hash: AEcpL4X9NYj774a9bH4DyoMM9UL2kuveq8184YJChqkj accounts_delta: CyFjcRL38AYoGXPDgWYceJDFArjeCctGFGvMjy1xsgZm signature_count: 2 last_blockhash: 6vDm5Rf1jH51vkX1QgjQZi5gg9D3AxMWGg1L13Q6aoxa capitalization: 503000502276871414
+[0m[38;5;8m[[0m2021-11-11T18:06:01.439690600Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m accounts hash slot: 10 stats: BankHashStats { num_updated_accounts: 8, num_removed_accounts: 0, num_lamports_stored: 1001001101540760, total_data_len: 161372, num_executable_accounts: 0 }
+[0m[38;5;8m[[0m2021-11-11T18:06:01.439732000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_cache_size num_roots=0i num_slots=0i total_unique_writes_size=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.439731500Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 10,
+            root: 0,
+            frozen_hash: Some(AEcpL4X9NYj774a9bH4DyoMM9UL2kuveq8184YJChqkj),
+            update: Frozen
+[0m[38;5;8m[[0m2021-11-11T18:06:01.439750800Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: None,
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:01.439868800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-observed slot=9i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.439899100Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m 5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm slot_weight: 10 0 0 9
+[0m[38;5;8m[[0m2021-11-11T18:06:01.439902400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: compute_bank_stats-best_slot computed_slot=10i overall_best_slot=10i overall_best_hash="AEcpL4X9NYj774a9bH4DyoMM9UL2kuveq8184YJChqkj" elapsed=8i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.439911400Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m validator fork confirmed 9 824ms
+[0m[38;5;8m[[0m2021-11-11T18:06:01.439913400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank_weight slot=10i weight="0"
+[0m[38;5;8m[[0m2021-11-11T18:06:01.439916100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: validator-confirmation duration_ms=824i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.439915800Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 9,
+            root: 0,
+            frozen_hash: Some(4WJtvvpEktay1XiKFEAqPfXpMaBViQZXT7JgS56gCGvh),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:06:01.439918900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-process-shreds-stats slot=10i shredding_time=10737i receive_time=388905i num_data_shreds=65i slot_broadcast_time=408038i get_leader_schedule_time=0i serialize_shreds_time=79i gen_data_time=10276i gen_coding_time=2032i sign_coding_time=1834i coding_send_time=2032i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.439920700Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: true,
+            cluster_duplicate_confirmed_hash: Some(4WJtvvpEktay1XiKFEAqPfXpMaBViQZXT7JgS56gCGvh),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:01.439922600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-transmit-shreds-stats slot=10i end_to_end_elapsed=408041i transmit_elapsed=743i send_mmsg_elapsed=60i get_peers_elapsed=0i num_shreds=192i shred_select=599i total_packets=0i dropped_packets=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.439926500Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (9, 4WJtvvpEktay1XiKFEAqPfXpMaBViQZXT7JgS56gCGvh) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:06:01.439972200Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m voting: 10 0
+[0m[38;5;8m[[0m2021-11-11T18:06:01.440008400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-vote latest=10i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.440189900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-insert-shreds-stats slot=10i end_to_end_elapsed=408287i insert_shreds_elapsed=17964i num_shreds=192i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.441824200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: block-commitment-cache aggregate-commitment-ms=0i highest-confirmed-root=0i highest-confirmed-slot=9i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.441852200Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m vote bank: Some((10, SameFork)) reset bank: 10
+[0m[38;5;8m[[0m2021-11-11T18:06:01.441881700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: blocks_produced num_blocks_on_fork=10i num_dropped_blocks_on_fork=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.441896500Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m reset poh from: 6vDm5Rf1jH51vkX1QgjQZi5gg9D3AxMWGg1L13Q6aoxa,704,10 to: 6vDm5Rf1jH51vkX1QgjQZi5gg9D3AxMWGg1L13Q6aoxa,10
+[0m[38;5;8m[[0m2021-11-11T18:06:01.441906900Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267 reset PoH to tick 704 (within slot 10). My next leader slot is 11
+[0m[38;5;8m[[0m2021-11-11T18:06:01.441933600Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m new fork:11 parent:10 (leader) root:0
+[0m[38;5;8m[[0m2021-11-11T18:06:01.441937100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-new_leader slot=11i leader="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267"
+[0m[38;5;8m[[0m2021-11-11T18:06:01.441943400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-my_leader_slot slot=11i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.441985800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-new_from_parent-heights slot_height=11i block_height=11i parent_slot_height=10i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.442167600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp get_timestamp_estimate_us=2i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.442174800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp-correction slot=11i from_genesis=1636653959i corrected=1636653961i ancestor_timestamp=1636653960i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.447761400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot_elapsed average_elapsed_ms=412i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.447778000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot slot=10i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.447847900Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 10,
+            root: 0,
+            frozen_hash: Some(AEcpL4X9NYj774a9bH4DyoMM9UL2kuveq8184YJChqkj),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:06:01.447861200Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: Some(AEcpL4X9NYj774a9bH4DyoMM9UL2kuveq8184YJChqkj),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:01.447866700Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (10, AEcpL4X9NYj774a9bH4DyoMM9UL2kuveq8184YJChqkj) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:06:01.506794600Z [0m[32mINFO [0m solana_core::window_service[0m[38;5;8m][0m num addresses: 0, top packets by source: []
+[0m[38;5;8m[[0m2021-11-11T18:06:01.506801800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: receive_window_stats num_packets=0i num_shreds=0i num_repairs=0i elapsed_micros=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.509710700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cost_tracker_stats bank_slot=10i block_cost=47224i transaction_count=2i number_of_accounts=2i costliest_account="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267" costliest_account_cost=47224i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.850842700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_db_store_timings hash_accounts=267i store_accounts=1652i update_index=19i handle_reclaims=0i append_accounts=1157i find_storage=146i num_accounts=24i total_data=484116i read_only_accounts_cache_entries=0i read_only_accounts_cache_data_size=0i read_only_accounts_cache_hits=0i read_only_accounts_cache_misses=0i calc_stored_meta_us=31i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.850940300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_db_store_timings2 recycle_store_count=0i current_recycle_store_count=0i current_recycle_store_bytes=0i create_store_count=3i store_get_slot_store=1i store_find_existing=3i dropped_stores=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.850865700Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m poh_record: max_tick_height 768 reached, clearing working_bank 11
+[0m[38;5;8m[[0m2021-11-11T18:06:01.851061400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: leader-slot-start-to-cleared-elapsed-ms slot=11i elapsed=408i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.851230300Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m bank frozen: 11
+[0m[38;5;8m[[0m2021-11-11T18:06:01.851234600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-slot-stats slot=11i fetch_entries_time=0i fetch_entries_fail_time=0i entry_poh_verification_time=0i entry_transaction_verification_time=0i replay_time=0i replay_total_elapsed=408961i total_entries=0i total_shreds=0i check_us=0i load_us=0i execute_us=0i store_us=0i update_stakes_cache_us=0i total_batches_len=0i num_execute_batches=0i serialize_us=0i create_vm_us=0i execute_inner_us=0i deserialize_us=0i changed_account_count=0i total_account_count=0i total_data_size=0i data_size_changed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.851246300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: per_program_timings slot=11i pubkey="all" execute_us=0i accumulated_units=0i count=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.851298600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: load_to_collect_rent_eagerly_scan_elapsed total_elapsed=4i latest_slot_elapsed=0i read_lock_elapsed=0i load_account_elapsed=0i iterator_elapsed=0i num_keys_iterated=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.851305900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: collect_rent_eagerly accounts=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.851308800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: shred_insert_is_full total_time_ms=412i slot=11i last_index=64i num_repaired=0i num_recovered=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.852218600Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m bank frozen: 11 hash: 5HVuciWfszy5TVQNok3aaYavWbshPFZ5SdC4qQYqDGbi accounts_delta: 5q4BGpMQ7RYDFShYRGJ33EqLag4kUY1r2yVw44j9RuEw signature_count: 2 last_blockhash: GjFyLG1wYuS4y26QXCFKGcTJ8CRArg2CrVz1KmmMGxRH capitalization: 503000502276866414
+[0m[38;5;8m[[0m2021-11-11T18:06:01.852232600Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m accounts hash slot: 11 stats: BankHashStats { num_updated_accounts: 8, num_removed_accounts: 0, num_lamports_stored: 1001001101530760, total_data_len: 161372, num_executable_accounts: 0 }
+[0m[38;5;8m[[0m2021-11-11T18:06:01.852288700Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 11,
+            root: 0,
+            frozen_hash: Some(5HVuciWfszy5TVQNok3aaYavWbshPFZ5SdC4qQYqDGbi),
+            update: Frozen
+[0m[38;5;8m[[0m2021-11-11T18:06:01.852298500Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: None,
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:01.852299900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_cache_size num_roots=0i num_slots=0i total_unique_writes_size=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.852411300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-observed slot=10i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.852419800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: compute_bank_stats-best_slot computed_slot=11i overall_best_slot=11i overall_best_hash="5HVuciWfszy5TVQNok3aaYavWbshPFZ5SdC4qQYqDGbi" elapsed=8i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.852426000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank_weight slot=11i weight="0"
+[0m[38;5;8m[[0m2021-11-11T18:06:01.852418200Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m 5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm slot_weight: 11 0 0 10
+[0m[38;5;8m[[0m2021-11-11T18:06:01.852437500Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m validator fork confirmed 10 822ms
+[0m[38;5;8m[[0m2021-11-11T18:06:01.852455800Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 10,
+            root: 0,
+            frozen_hash: Some(AEcpL4X9NYj774a9bH4DyoMM9UL2kuveq8184YJChqkj),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:06:01.852462700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: validator-confirmation duration_ms=822i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.852465800Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: true,
+            cluster_duplicate_confirmed_hash: Some(AEcpL4X9NYj774a9bH4DyoMM9UL2kuveq8184YJChqkj),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:01.852481200Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (10, AEcpL4X9NYj774a9bH4DyoMM9UL2kuveq8184YJChqkj) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:06:01.852496700Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m voting: 11 0
+[0m[38;5;8m[[0m2021-11-11T18:06:01.852525900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-vote latest=11i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.852796000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-transmit-shreds-stats slot=11i end_to_end_elapsed=407623i transmit_elapsed=910i send_mmsg_elapsed=84i get_peers_elapsed=0i num_shreds=192i shred_select=726i total_packets=0i dropped_packets=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.852833100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-process-shreds-stats slot=11i shredding_time=10550i receive_time=386965i num_data_shreds=65i slot_broadcast_time=407628i get_leader_schedule_time=0i serialize_shreds_time=58i gen_data_time=9991i gen_coding_time=2466i sign_coding_time=2166i coding_send_time=2466i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.853079900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-insert-shreds-stats slot=11i end_to_end_elapsed=407909i insert_shreds_elapsed=18958i num_shreds=192i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.854577100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: block-commitment-cache aggregate-commitment-ms=0i highest-confirmed-root=0i highest-confirmed-slot=10i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.854596300Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m vote bank: Some((11, SameFork)) reset bank: 11
+[0m[38;5;8m[[0m2021-11-11T18:06:01.854629200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: blocks_produced num_blocks_on_fork=11i num_dropped_blocks_on_fork=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.854652900Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m reset poh from: GjFyLG1wYuS4y26QXCFKGcTJ8CRArg2CrVz1KmmMGxRH,768,11 to: GjFyLG1wYuS4y26QXCFKGcTJ8CRArg2CrVz1KmmMGxRH,11
+[0m[38;5;8m[[0m2021-11-11T18:06:01.854663100Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267 reset PoH to tick 768 (within slot 11). My next leader slot is 12
+[0m[38;5;8m[[0m2021-11-11T18:06:01.854688300Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m new fork:12 parent:11 (leader) root:0
+[0m[38;5;8m[[0m2021-11-11T18:06:01.854694400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-new_leader slot=12i leader="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267"
+[0m[38;5;8m[[0m2021-11-11T18:06:01.854703000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-my_leader_slot slot=12i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.854752300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-new_from_parent-heights slot_height=12i block_height=12i parent_slot_height=11i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.854957100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp get_timestamp_estimate_us=3i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.854964400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp-correction slot=12i from_genesis=1636653959i corrected=1636653961i ancestor_timestamp=1636653961i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.866744800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot_elapsed average_elapsed_ms=418i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.866765700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot slot=11i
+[0m[38;5;8m[[0m2021-11-11T18:06:01.867046800Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 11,
+            root: 0,
+            frozen_hash: Some(5HVuciWfszy5TVQNok3aaYavWbshPFZ5SdC4qQYqDGbi),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:06:01.867059100Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: Some(5HVuciWfszy5TVQNok3aaYavWbshPFZ5SdC4qQYqDGbi),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:01.867064800Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (11, 5HVuciWfszy5TVQNok3aaYavWbshPFZ5SdC4qQYqDGbi) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:06:01.910152200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cost_tracker_stats bank_slot=11i block_cost=47224i transaction_count=2i number_of_accounts=2i costliest_account="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267" costliest_account_cost=47224i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.262836500Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m poh_record: max_tick_height 832 reached, clearing working_bank 12
+[0m[38;5;8m[[0m2021-11-11T18:06:02.262889200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: leader-slot-start-to-cleared-elapsed-ms slot=12i elapsed=407i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.263026700Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m bank frozen: 12
+[0m[38;5;8m[[0m2021-11-11T18:06:02.263028200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-slot-stats slot=12i fetch_entries_time=0i fetch_entries_fail_time=0i entry_poh_verification_time=0i entry_transaction_verification_time=0i replay_time=0i replay_total_elapsed=407955i total_entries=0i total_shreds=0i check_us=0i load_us=0i execute_us=0i store_us=0i update_stakes_cache_us=0i total_batches_len=0i num_execute_batches=0i serialize_us=0i create_vm_us=0i execute_inner_us=0i deserialize_us=0i changed_account_count=0i total_account_count=0i total_data_size=0i data_size_changed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.263063500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: per_program_timings slot=12i pubkey="all" execute_us=0i accumulated_units=0i count=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.263146200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: load_to_collect_rent_eagerly_scan_elapsed total_elapsed=5i latest_slot_elapsed=0i read_lock_elapsed=0i load_account_elapsed=0i iterator_elapsed=0i num_keys_iterated=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.263156600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: collect_rent_eagerly accounts=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.263209100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: shred_insert_is_full total_time_ms=412i slot=12i last_index=63i num_repaired=0i num_recovered=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.264146000Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m bank frozen: 12 hash: Bo97C6AE2SAUafEBeBDtxmuPTCRXRBWfnskH1CepyZcJ accounts_delta: GnNnzqwFDtrvRpmZeRjFTTfwWV2zvvPNmba67QEwyJyr signature_count: 2 last_blockhash: 88TmuQhCT5UF8zqHehRcXngJ3rAZGLEKTxpYXusaWJcs capitalization: 503000502276861414
+[0m[38;5;8m[[0m2021-11-11T18:06:02.264159900Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m accounts hash slot: 12 stats: BankHashStats { num_updated_accounts: 8, num_removed_accounts: 0, num_lamports_stored: 1001001101520760, total_data_len: 161372, num_executable_accounts: 0 }
+[0m[38;5;8m[[0m2021-11-11T18:06:02.264229400Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 12,
+            root: 0,
+            frozen_hash: Some(Bo97C6AE2SAUafEBeBDtxmuPTCRXRBWfnskH1CepyZcJ),
+            update: Frozen
+[0m[38;5;8m[[0m2021-11-11T18:06:02.264240700Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: None,
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:02.264244300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_cache_size num_roots=0i num_slots=0i total_unique_writes_size=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.264366500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-observed slot=11i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.264412400Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m 5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm slot_weight: 12 0 0 11
+[0m[38;5;8m[[0m2021-11-11T18:06:02.264419700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: compute_bank_stats-best_slot computed_slot=12i overall_best_slot=12i overall_best_hash="Bo97C6AE2SAUafEBeBDtxmuPTCRXRBWfnskH1CepyZcJ" elapsed=12i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.264425400Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m validator fork confirmed 11 822ms
+[0m[38;5;8m[[0m2021-11-11T18:06:02.264429800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank_weight slot=12i weight="0"
+[0m[38;5;8m[[0m2021-11-11T18:06:02.264438400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: validator-confirmation duration_ms=822i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.264435300Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 11,
+            root: 0,
+            frozen_hash: Some(5HVuciWfszy5TVQNok3aaYavWbshPFZ5SdC4qQYqDGbi),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:06:02.264481100Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: true,
+            cluster_duplicate_confirmed_hash: Some(5HVuciWfszy5TVQNok3aaYavWbshPFZ5SdC4qQYqDGbi),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:02.264491100Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (11, 5HVuciWfszy5TVQNok3aaYavWbshPFZ5SdC4qQYqDGbi) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:06:02.264509600Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m voting: 12 0
+[0m[38;5;8m[[0m2021-11-11T18:06:02.264548000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-vote latest=12i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.264959100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-process-shreds-stats slot=12i shredding_time=10629i receive_time=389161i num_data_shreds=64i slot_broadcast_time=407405i get_leader_schedule_time=0i serialize_shreds_time=196i gen_data_time=9995i gen_coding_time=1867i sign_coding_time=1023i coding_send_time=1867i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.264971300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-transmit-shreds-stats slot=12i end_to_end_elapsed=407414i transmit_elapsed=895i send_mmsg_elapsed=85i get_peers_elapsed=0i num_shreds=128i shred_select=736i total_packets=0i dropped_packets=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.265220200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-insert-shreds-stats slot=12i end_to_end_elapsed=407631i insert_shreds_elapsed=18554i num_shreds=128i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.266940600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: block-commitment-cache aggregate-commitment-ms=0i highest-confirmed-root=0i highest-confirmed-slot=11i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.266961700Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m vote bank: Some((12, SameFork)) reset bank: 12
+[0m[38;5;8m[[0m2021-11-11T18:06:02.267011200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: blocks_produced num_blocks_on_fork=12i num_dropped_blocks_on_fork=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.267025100Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m reset poh from: 88TmuQhCT5UF8zqHehRcXngJ3rAZGLEKTxpYXusaWJcs,832,12 to: 88TmuQhCT5UF8zqHehRcXngJ3rAZGLEKTxpYXusaWJcs,12
+[0m[38;5;8m[[0m2021-11-11T18:06:02.267035600Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267 reset PoH to tick 832 (within slot 12). My next leader slot is 13
+[0m[38;5;8m[[0m2021-11-11T18:06:02.267061500Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m new fork:13 parent:12 (leader) root:0
+[0m[38;5;8m[[0m2021-11-11T18:06:02.267065600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-new_leader slot=13i leader="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267"
+[0m[38;5;8m[[0m2021-11-11T18:06:02.267071900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-my_leader_slot slot=13i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.267139300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-new_from_parent-heights slot_height=13i block_height=13i parent_slot_height=12i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.267374600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp get_timestamp_estimate_us=1i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.267388200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp-correction slot=13i from_genesis=1636653960i corrected=1636653961i ancestor_timestamp=1636653961i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.279050400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: poh_recorder slot=13i tick_lock_contention=931i record_us=4i flush_cache_no_tick_us=0i flush_cache_tick_us=5641i prepare_send_us=0i send_us=28i ticks_from_record=0i total_sleep_us=8137i tick_overhead=0i record_lock_contention=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.279420800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot_elapsed average_elapsed_ms=412i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.279436900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot slot=12i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.279742200Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 12,
+            root: 0,
+            frozen_hash: Some(Bo97C6AE2SAUafEBeBDtxmuPTCRXRBWfnskH1CepyZcJ),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:06:02.279755000Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: Some(Bo97C6AE2SAUafEBeBDtxmuPTCRXRBWfnskH1CepyZcJ),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:02.279760300Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (12, Bo97C6AE2SAUafEBeBDtxmuPTCRXRBWfnskH1CepyZcJ) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:06:02.310601000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cost_tracker_stats bank_slot=12i block_cost=47224i transaction_count=2i number_of_accounts=2i costliest_account="5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm" costliest_account_cost=47224i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.310624300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cost-update-service-stats total_elapsed_us=1001000i update_cost_model_count=0i update_cost_model_elapsed=127i persist_cost_table_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.323979500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-loop-voting-stats vote_push_us=0i vote_send_us=0i generate_vote_us=196i update_commitment_cache_us=48i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.323994300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-loop-timing-stats total_elapsed_us=1006000i collect_frozen_banks_elapsed=415i compute_bank_stats_elapsed=1887i select_vote_and_reset_forks_elapsed=203i start_leader_elapsed=919i reset_bank_elapsed=211i voting_elapsed=6416i select_forks_elapsed=194i compute_slot_stats_elapsed=194i generate_new_bank_forks_elapsed=6606i replay_active_banks_elapsed=9406i process_gossip_duplicate_confirmed_slots_elapsed=192i process_unfrozen_gossip_verified_vote_hashes_elapsed=25i wait_receive_elapsed=970795i heaviest_fork_failures_elapsed=0i bank_count=3i process_duplicate_slots_elapsed=21i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.330191600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cluster_info-num_nodes live_count=0i broadcast_count=1i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.413234700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: banking_stage-loop-stats id=3i process_packets_count=0i new_tx_count=0i dropped_packet_batches_count=0i dropped_packets_count=0i dropped_duplicated_packets_count=0i newly_buffered_packets_count=0i current_buffered_packet_batches_count=0i current_buffered_packets_count=0i rebuffered_packets_count=0i consumed_buffered_packets_count=0i cost_tracker_check_count=0i cost_forced_retry_transactions_count=0i consume_buffered_packets_elapsed=0i process_packets_elapsed=0i handle_retryable_packets_elapsed=0i filter_pending_packets_elapsed=0i packet_duplicate_check_elapsed=0i packet_conversion_elapsed=0i unprocessed_packet_conversion_elapsed=0i transaction_processing_elapsed=0i cost_tracker_update_elapsed=0i cost_tracker_clone_elapsed=0i cost_tracker_check_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.413365100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: banking_stage-loop-stats id=2i process_packets_count=0i new_tx_count=0i dropped_packet_batches_count=0i dropped_packets_count=0i dropped_duplicated_packets_count=0i newly_buffered_packets_count=0i current_buffered_packet_batches_count=0i current_buffered_packets_count=0i rebuffered_packets_count=0i consumed_buffered_packets_count=0i cost_tracker_check_count=0i cost_forced_retry_transactions_count=0i consume_buffered_packets_elapsed=0i process_packets_elapsed=0i handle_retryable_packets_elapsed=0i filter_pending_packets_elapsed=0i packet_duplicate_check_elapsed=0i packet_conversion_elapsed=0i unprocessed_packet_conversion_elapsed=0i transaction_processing_elapsed=0i cost_tracker_update_elapsed=0i cost_tracker_clone_elapsed=0i cost_tracker_check_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.416882200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: banking_stage-loop-stats id=0i process_packets_count=2i new_tx_count=2i dropped_packet_batches_count=0i dropped_packets_count=0i dropped_duplicated_packets_count=0i newly_buffered_packets_count=0i current_buffered_packet_batches_count=0i current_buffered_packets_count=0i rebuffered_packets_count=0i consumed_buffered_packets_count=0i cost_tracker_check_count=2i cost_forced_retry_transactions_count=0i consume_buffered_packets_elapsed=0i process_packets_elapsed=344i handle_retryable_packets_elapsed=0i filter_pending_packets_elapsed=13i packet_duplicate_check_elapsed=1i packet_conversion_elapsed=27i unprocessed_packet_conversion_elapsed=0i transaction_processing_elapsed=114i cost_tracker_update_elapsed=4i cost_tracker_clone_elapsed=0i cost_tracker_check_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.479901000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: banking_stage-loop-stats id=1i process_packets_count=3i new_tx_count=0i dropped_packet_batches_count=0i dropped_packets_count=0i dropped_duplicated_packets_count=0i newly_buffered_packets_count=3i current_buffered_packet_batches_count=1i current_buffered_packets_count=1i rebuffered_packets_count=0i consumed_buffered_packets_count=3i cost_tracker_check_count=3i cost_forced_retry_transactions_count=0i consume_buffered_packets_elapsed=9223i process_packets_elapsed=38i handle_retryable_packets_elapsed=0i filter_pending_packets_elapsed=8i packet_duplicate_check_elapsed=32i packet_conversion_elapsed=35i unprocessed_packet_conversion_elapsed=0i transaction_processing_elapsed=8936i cost_tracker_update_elapsed=11i cost_tracker_clone_elapsed=0i cost_tracker_check_elapsed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.675870500Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m poh_record: max_tick_height 896 reached, clearing working_bank 13
+[0m[38;5;8m[[0m2021-11-11T18:06:02.675929200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: leader-slot-start-to-cleared-elapsed-ms slot=13i elapsed=408i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.676053000Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m bank frozen: 13
+[0m[38;5;8m[[0m2021-11-11T18:06:02.676055700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay-slot-stats slot=13i fetch_entries_time=0i fetch_entries_fail_time=0i entry_poh_verification_time=0i entry_transaction_verification_time=0i replay_time=0i replay_total_elapsed=408594i total_entries=0i total_shreds=0i check_us=0i load_us=0i execute_us=0i store_us=0i update_stakes_cache_us=0i total_batches_len=0i num_execute_batches=0i serialize_us=0i create_vm_us=0i execute_inner_us=0i deserialize_us=0i changed_account_count=0i total_account_count=0i total_data_size=0i data_size_changed=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.676072900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: per_program_timings slot=13i pubkey="all" execute_us=0i accumulated_units=0i count=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.676141500Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: load_to_collect_rent_eagerly_scan_elapsed total_elapsed=8i latest_slot_elapsed=0i read_lock_elapsed=0i load_account_elapsed=0i iterator_elapsed=0i num_keys_iterated=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.676153400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: collect_rent_eagerly accounts=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.676157200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: shred_insert_is_full total_time_ms=413i slot=13i last_index=64i num_repaired=0i num_recovered=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.677037500Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m bank frozen: 13 hash: 5P4V4KkCcEeeHFjzZBY779j6rQexJfxfcwn72osKvSdf accounts_delta: Gu2Kc7Kpx5tqndBDP3k8paTn8mEsd7F3YED6YxrYvxEx signature_count: 2 last_blockhash: 2FF7pfn2Z2oFyEp1vHAGszwP9D8xiyYDfdRQ1zPQR7UD capitalization: 503000502276856414
+[0m[38;5;8m[[0m2021-11-11T18:06:02.677070900Z [0m[32mINFO [0m solana_runtime::bank[0m[38;5;8m][0m accounts hash slot: 13 stats: BankHashStats { num_updated_accounts: 8, num_removed_accounts: 0, num_lamports_stored: 1001001101510760, total_data_len: 161372, num_executable_accounts: 0 }
+[0m[38;5;8m[[0m2021-11-11T18:06:02.677127800Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 13,
+            root: 0,
+            frozen_hash: Some(5P4V4KkCcEeeHFjzZBY779j6rQexJfxfcwn72osKvSdf),
+            update: Frozen
+[0m[38;5;8m[[0m2021-11-11T18:06:02.677153000Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: None,
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:02.677130800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: accounts_cache_size num_roots=0i num_slots=0i total_unique_writes_size=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.677265400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-observed slot=12i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.677295600Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m 5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm slot_weight: 13 0 0 12
+[0m[38;5;8m[[0m2021-11-11T18:06:02.677299600Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: compute_bank_stats-best_slot computed_slot=13i overall_best_slot=13i overall_best_hash="5P4V4KkCcEeeHFjzZBY779j6rQexJfxfcwn72osKvSdf" elapsed=8i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.677307200Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m validator fork confirmed 12 822ms
+[0m[38;5;8m[[0m2021-11-11T18:06:02.677308400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank_weight slot=13i weight="0"
+[0m[38;5;8m[[0m2021-11-11T18:06:02.677312100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: validator-confirmation duration_ms=822i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.677310900Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 12,
+            root: 0,
+            frozen_hash: Some(Bo97C6AE2SAUafEBeBDtxmuPTCRXRBWfnskH1CepyZcJ),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:06:02.677316100Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: true,
+            cluster_duplicate_confirmed_hash: Some(Bo97C6AE2SAUafEBeBDtxmuPTCRXRBWfnskH1CepyZcJ),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:02.677324600Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (12, Bo97C6AE2SAUafEBeBDtxmuPTCRXRBWfnskH1CepyZcJ) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:06:02.677336300Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m voting: 13 0
+[0m[38;5;8m[[0m2021-11-11T18:06:02.677365700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: tower-vote latest=13i root=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.678235900Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-process-shreds-stats slot=13i shredding_time=10532i receive_time=388807i num_data_shreds=65i slot_broadcast_time=408901i get_leader_schedule_time=0i serialize_shreds_time=81i gen_data_time=10000i gen_coding_time=2774i sign_coding_time=2146i coding_send_time=2774i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.678273100Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-transmit-shreds-stats slot=13i end_to_end_elapsed=408922i transmit_elapsed=917i send_mmsg_elapsed=102i get_peers_elapsed=0i num_shreds=192i shred_select=736i total_packets=0i dropped_packets=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.678477200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: broadcast-insert-shreds-stats slot=13i end_to_end_elapsed=409184i insert_shreds_elapsed=19126i num_shreds=192i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.679470800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: block-commitment-cache aggregate-commitment-ms=0i highest-confirmed-root=0i highest-confirmed-slot=12i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.679485800Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m vote bank: Some((13, SameFork)) reset bank: 13
+[0m[38;5;8m[[0m2021-11-11T18:06:02.679851800Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: blocks_produced num_blocks_on_fork=13i num_dropped_blocks_on_fork=0i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.679861400Z [0m[32mINFO [0m solana_poh::poh_recorder[0m[38;5;8m][0m reset poh from: 2FF7pfn2Z2oFyEp1vHAGszwP9D8xiyYDfdRQ1zPQR7UD,896,13 to: 2FF7pfn2Z2oFyEp1vHAGszwP9D8xiyYDfdRQ1zPQR7UD,13
+[0m[38;5;8m[[0m2021-11-11T18:06:02.679871000Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267 reset PoH to tick 896 (within slot 13). My next leader slot is 14
+[0m[38;5;8m[[0m2021-11-11T18:06:02.679921000Z [0m[32mINFO [0m solana_core::replay_stage[0m[38;5;8m][0m new fork:14 parent:13 (leader) root:0
+[0m[38;5;8m[[0m2021-11-11T18:06:02.679937200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-new_leader slot=14i leader="FaMufswKGfEsoWh9QXh4PMKTKHmuGr6PKwpCFjaug267"
+[0m[38;5;8m[[0m2021-11-11T18:06:02.679947000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: replay_stage-my_leader_slot slot=14i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.679996400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-new_from_parent-heights slot_height=14i block_height=14i parent_slot_height=13i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.680232300Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp get_timestamp_estimate_us=2i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.680242400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: bank-timestamp-correction slot=14i from_genesis=1636653960i corrected=1636653962i ancestor_timestamp=1636653961i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.685684700Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot_elapsed average_elapsed_ms=406i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.685697000Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: optimistic_slot slot=13i
+[0m[38;5;8m[[0m2021-11-11T18:06:02.685776300Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster()
+            slot: 13,
+            root: 0,
+            frozen_hash: Some(5P4V4KkCcEeeHFjzZBY779j6rQexJfxfcwn72osKvSdf),
+            update: DuplicateConfirmed
+[0m[38;5;8m[[0m2021-11-11T18:06:02.685793200Z [0m[32mINFO [0m solana_core::cluster_slot_state_verifier[0m[38;5;8m][0m check_slot_agrees_with_cluster() state
+            is_local_replay_duplicate_confirmed: false,
+            cluster_duplicate_confirmed_hash: Some(5P4V4KkCcEeeHFjzZBY779j6rQexJfxfcwn72osKvSdf),
+            is_slot_duplicate: false,
+            is_dead: false
+[0m[38;5;8m[[0m2021-11-11T18:06:02.685798700Z [0m[32mINFO [0m solana_core::heaviest_subtree_fork_choice[0m[38;5;8m][0m marking fork starting at: (13, 5P4V4KkCcEeeHFjzZBY779j6rQexJfxfcwn72osKvSdf) valid candidate
+[0m[38;5;8m[[0m2021-11-11T18:06:02.711083200Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: cost_tracker_stats bank_slot=13i block_cost=47224i transaction_count=2i number_of_accounts=2i costliest_account="5e8zKhsS5NNAgEuqNepFNqJayccZoNrSqJbiNFtZwuxm" costliest_account_cost=47224i
